@@ -10,7 +10,7 @@ Template ini dirancang untuk mempermudah penulisan Proposal dan Laporan Tugas Ak
 
 ## 📁 Struktur Proyek
 
-```
+```text
 Template-LaTeX-Laporan-Tugas-Akhir
 ├── CHANGELOG                         # Catatan perubahan
 ├── LICENSE                           # Lisensi proyek        
@@ -185,7 +185,7 @@ Silakan buat **Pull Request** atau buka **Issue** melalui GitHub.
 
 Jika Anda memiliki pertanyaan terkait penggunaan template ini untuk Universitas Bani Saleh, silakan hubungi melalui GitHub Issues.
 
-**Pengembang**: [abdil.haidar17@gmail.com](mailto:abdil.haidar17@gmail.com) | [@2black0](https://github.com/X-Hozmi)
+**Pengembang**: [abdil.haidar17@gmail.com](mailto:abdil.haidar17@gmail.com) | [X-Hozmi](https://github.com/X-Hozmi)
 
 **Template Asli**: [ardyseto@uny.ac.id](mailto:ardyseto@uny.ac.id) | [@2black0](https://github.com/2black0)
 
