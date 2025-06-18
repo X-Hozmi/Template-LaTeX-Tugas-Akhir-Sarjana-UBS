@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: laporan.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: newapa.bst
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: untouch/xx-sampul-proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: untouch/xx-persetujuan-proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: untouch/xx-pengesahan.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: untouch/xx-pernyataan.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: a2-abstrak.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: a3-abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: a5-katapengantar.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: untouch/xx-daftar.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b1-bab1.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b2-bab2.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b3-bab3.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b4-bab4.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b5-bab5.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b6-bab6.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: a7-pustaka.bib
+You've used 10 entries,
+            2708 wiz_defined-function locations,
+            674 strings with 7220 characters,
+and the built_in function-call counts, 5414 in all, are:
+= -- 471
+> -- 289
+< -- 5
++ -- 111
+- -- 111
+* -- 533
+:= -- 1030
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 96
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 194
+empty$ -- 335
+format.name$ -- 123
+if$ -- 1000
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 53
+num.names$ -- 40
+pop$ -- 86
+preamble$ -- 1
+purify$ -- 107
+quote$ -- 0
+skip$ -- 137
+stack$ -- 0
+substring$ -- 325
+swap$ -- 59
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 58
+warning$ -- 0
+while$ -- 43
+width$ -- 0
+write$ -- 132

@@ -1,0 +1,342 @@
+%==================================================================
+% Konfigurasi utama untuk dokumen LaTeX
+%==================================================================
+
+% Mengatur bahasa dokumen ke Bahasa Indonesia dan encoding karakter
+\usepackage[indonesian]{babel}
+\usepackage[utf8]{inputenc}
+% Pengaturan jarak antar baris dan penyesuaian kotak teks agar rata kiri
+\usepackage{setspace}
+\usepackage[raggedrightboxes]{ragged2e}
+% Paket untuk memasukkan gambar dalam dokumen
+\usepackage{graphicx}
+\usepackage{float}       % Mengatur posisi gambar dalam teks
+% Mengatur indentasi paragraf
+\usepackage{indentfirst}  % Memastikan paragraf pertama di setiap section memiliki indentasi
+% Paket untuk mengatur indentasi section dan subsection
+\usepackage{changepage}
+% Mengatur font utama dokumen menjadi Times New Roman
+\usepackage{pslatex}
+% Pengaturan daftar isi, daftar gambar, dan daftar tabel
+\usepackage{chngcntr, tocloft}
+% Pengaturan format dan penomoran judul bab
+\usepackage{titlesec}
+% Pengaturan untuk caption gambar dan tabel
+\usepackage[font=small, format=plain, up, textfont=up, tablename=TABEL]{caption}
+% \usepackage{caption}
+\usepackage{subcaption}
+% Pengaturan tabel, multirow, dan ukuran kolom otomatis
+\usepackage{tabularx}
+\usepackage{multirow}
+% Pengaturan margin halaman
+\usepackage{geometry}
+% Paket untuk notasi matematika
+\usepackage{amsmath}
+% Untuk halaman berorientasi landscape
+\usepackage{rotating}
+% Pengaturan untuk list (daftar item dan angka)
+\usepackage{enumitem}
+% Paket untuk bibliografi menggunakan BibTeX
+\usepackage[sort]{natbib}
+% Paket untuk tabel yang panjang dan melampaui satu halaman
+\usepackage{longtable}
+% Paket untuk memasukkan hyperlink dalam dokumen
+\usepackage{hyperref}
+% Pengaturan label otomatis untuk berbagai elemen (gambar, tabel, persamaan)
+\usepackage{cleveref}
+% Paket untuk menampilkan kode program
+\usepackage{listings}
+\usepackage{xcolor}
+%paket untuk gambar dengan tikz
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+%untuk if-then
+\usepackage{ifthen}
+%untuk mesanitasi (sensor) teks
+\usepackage{censor}
+
+\usepackage{booktabs}
+% Paket untuk menghitung halaman dan referensi
+\usepackage{totcount}
+\usepackage{lastpage}
+\usepackage{refcount}
+
+\graphicspath{{gambar/}} % Menentukan folder default untuk gambar
+
+\setlength\parindent{1cm} % Mengatur jarak indentasi paragraf menjadi 1cm (1 tab)
+
+% Mengatur format penomoran section dan subsection
+\renewcommand{\thesection}{\thechapter.\arabic{section}}        % Subsection: 1, 2, 3, ...
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}  % Subsection: 1.1, 2.1, 3.1, ...
+
+% Pengaturan daftar isi, daftar gambar, dan daftar tabel
+\cftsetpnumwidth{1.5em}
+\cftsetrmarg{2em}
+\setlength{\cftsecnumwidth}{1.5em}
+\setlength{\cftsubsecnumwidth}{1.5em}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\setlength{\cftbeforechapskip}{3pt}
+
+% Penyesuaian judul bab dalam daftar isi agar ditampilkan sebagai "BAB"
+\renewcommand\cftchappresnum{BAB }
+\renewcommand\cftchapaftersnum{}
+\newlength\mylen
+\settowidth\mylen{\bfseries BAB 1 :\ } % Menyesuaikan lebar penomoran bab
+\cftsetindents{chap}{0pt}{\mylen}
+
+% % Pengaturan format dan penomoran judul bab
+\titleformat{\chapter}{\doublespacing\fontsize{16pt}{18pt}\bfseries}{\MakeUppercase{\chaptertitlename\ \Roman{chapter}}\filcenter}{0.15cm}{\centering\uppercase}
+
+% % Pengaturan format section dengan adjustwidth otomatis
+\titleformat{\section}{\fontsize{14}{16}\bfseries}{\thesection}{0.4cm}{}
+\titleformat{\subsection}{\fontsize{14}{16}\bfseries}{\thesubsection}{0.675cm}{}
+
+% Mengatur jarak dan format spacing untuk chapter, section dan subsection
+\titlespacing*{\chapter}{0pt}{-1cm}{20pt}
+\titlespacing*{\section}{0pt}{10pt}{0cm}
+\titlespacing*{\subsection}{2.4em}{10pt}{0cm}
+
+%==================================================================
+% CUSTOM ENVIRONMENTS UNTUK INDENTASI SECTION DAN SUBSECTION
+%==================================================================
+
+% Environment untuk konten section (indentasi 2.4em)
+\newenvironment{sectioncontent}{%
+    \begin{adjustwidth}{2.4em}{0pt}%
+}{%
+    \end{adjustwidth}%
+}
+
+% Environment khusus untuk sistematika penulisan
+\newenvironment{sistematika}{%
+    \begin{sectioncontent}%
+    \setlength{\parskip}{0\baselineskip}% Jarak antar paragraf
+}{%
+    \end{sectioncontent}%
+}
+
+% Command untuk membuat item sistematika
+% Parameter: {nomor bab romawi}{judul bab}{deskripsi}
+\newcommand{\babsistematika}[3]{%
+    \noindent\textbf{\makebox[2cm][l]{BAB #1}#2}%\\ Aktifkan bagian ini apabila ingin membuat deskripsi menjadi dalam bentuk paragraf
+    % Aktifkan bagian ini apabila ingin membuat deskripsi menjadi dalam bentuk paragraf
+    % \hspace{0cm}\noindent\makebox[2cm][l]{}#3\par\vspace{0cm}
+
+    % Aktifkan bagian ini apabila ingin membuat deskripsi tidak dalam bentuk paragraf
+    {\leftskip=2cm\noindent#3\par\vspace{0cm}}
+}
+
+% Environment untuk konten subsection (indentasi 6.0em)
+\newenvironment{subsectioncontent}{%
+    \begin{adjustwidth}{6.4em}{0pt}%
+}{%
+    \end{adjustwidth}%
+}
+
+% Environment untuk konten subsubsection (jika diperlukan, indentasi 8.4em)
+\newenvironment{subsubsectioncontent}{%
+    \begin{adjustwidth}{8.4em}{0pt}%
+}{%
+    \end{adjustwidth}%
+}
+
+% Environment alternatif dengan parameter fleksibel untuk indentasi custom
+\newenvironment{customindent}[1]{%
+    \begin{adjustwidth}{#1}{0pt}%
+}{%
+    \end{adjustwidth}%
+}
+
+% Macro untuk membuat section dengan konten yang sudah ter-indent otomatis
+\newcommand{\indentsection}[2]{%
+    \section{#1}%
+    \begin{sectioncontent}%
+        #2%
+    \end{sectioncontent}%
+}
+
+% Macro untuk membuat subsection dengan konten yang sudah ter-indent otomatis
+\newcommand{\indentsubsection}[2]{%
+    \subsection{#1}%
+    \begin{subsectioncontent}%
+        #2%
+    \end{subsectioncontent}%
+}
+
+%==================================================================
+% PENGATURAN LAINNYA (TETAP SAMA)
+%==================================================================
+
+% Menghapus tanda titik dua pada caption
+% \captionsetup[figure]{labelsep=space}
+% \captionsetup[table]{labelsep=space}
+\captionsetup[figure]{
+  labelsep=newline,
+  singlelinecheck=false,
+  justification=centering,
+}
+\captionsetup[table]{
+  labelsep=newline,
+  singlelinecheck=false,
+  justification=centering,
+}
+
+% Mengatur nomor caption gambar dan tabel sesuai bab
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+
+% Mengatur hyphenation (pemisahan kata) agar lebih rapi
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% Pengaturan margin halaman
+\geometry{
+    left=4cm,          % Margin kiri
+    top=4cm,           % Margin atas
+    right=3cm,         % Margin kanan
+    bottom=3cm,        % Margin bawah
+}
+
+% Pengaturan nomor pada persamaan matematika sesuai bab
+%\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\makeatletter
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\@eqnnum}{\theequation}
+\def\tagform@#1{\maketag@@@{#1}} % This line removes the parentheses
+\makeatother
+
+% Pengaturan untuk list (daftar item dan angka)
+\setlist{nosep} % Menghilangkan jarak antar item dalam list
+\newenvironment{packed_enum}{ % Membuat lingkungan untuk daftar bernomor
+    \begin{enumerate}[leftmargin=1.5\parindent]
+        \setlength{\itemsep}{0pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        }{\end{enumerate}}
+
+\newenvironment{packed_item}{ % Membuat lingkungan untuk daftar berpoin
+    \begin{itemize}[leftmargin=1.375\parindent]
+        \setlength{\itemsep}{0pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        }{\end{itemize}}
+
+% Paket untuk bibliografi menggunakan BibTeX
+\bibliographystyle{newapa} % Ganti dengan apalike jika menggunakan Overleaf
+
+% Pengaturan label otomatis untuk berbagai elemen (gambar, tabel, persamaan)
+\crefname{figure}{gambar}{gambar}
+\Crefname{figure}{Gambar}{Gambar}
+\crefname{table}{tabel}{tabel}
+\Crefname{table}{Tabel}{Tabel}
+\crefformat{equation}{persamaan~#2#1#3}
+\crefname{equation}{persamaan}{persamaan}
+\Crefname{equation}{Persamaan}{Persamaan}
+\crefname{lstlisting}{kode}{kode}
+\Crefname{lstlisting}{Kode}{Kode}
+
+%\AtBeginDocument{\renewcommand{\lstlistingname}{Kode}} 
+%\AtBeginDocument{\renewcommand{\thelstlisting}{\thechapter.\arabic{lstlisting}}}
+%\AtBeginDocument{\renewcommand{\thelstlisting}{\arabic{chapter}.\arabic{lstlisting}.}}
+\AtBeginDocument{\renewcommand{\lstlistingname}{Kode}}
+\AtBeginDocument{\renewcommand{\thelstlisting}{\arabic{chapter}.\arabic{lstlisting}}}
+
+\captionsetup[lstlisting]{
+  format=plain,
+  labelfont=bf,
+  justification=centering,
+  singlelinecheck=false,
+  labelsep=space
+}
+
+% Paket untuk menampilkan kode program
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    columns=fullflexible,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    lineskip=-1pt
+}
+\lstset{style=mystyle}
+
+%paket untuk gambar dengan tikz
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+% Mendaftarkan counter untuk berbagai elemen
+\regtotcounter{table}       % Counter untuk tabel
+\regtotcounter{figure}      % Counter untuk gambar
+
+% Counter custom untuk lampiran dan pustaka
+\newcounter{lampiran}
+\regtotcounter{lampiran}
+
+\newcounter{pustaka}
+\regtotcounter{pustaka}
+
+% Command untuk mendapatkan halaman roman terakhir
+\makeatletter
+\newcommand{\savelastfrontpage}{%
+    \immediate\write\@auxout{\noexpand\newlabel{LastFrontPage}{{}{\arabic{page}}}}%
+}
+
+% Command untuk mendapatkan jumlah halaman roman (dalam angka, dikurangi 1)
+\newcommand{\getromanpagecount}{%
+    \ifcsname r@LastFrontPage\endcsname
+        \the\numexpr\getpagerefnumber{LastFrontPage}-1\relax%
+    \else
+        0% Default jika belum ada referensi
+    \fi
+}
+
+% Command untuk mendapatkan halaman roman terakhir dalam format roman (dikurangi 1)
+\newcommand{\getromanpagelast}{%
+    \ifcsname r@LastFrontPage\endcsname
+        \expandafter\@roman\expandafter{\the\numexpr\getpagerefnumber{LastFrontPage}-1\relax}%
+    \else
+        0% Default jika belum ada referensi
+    \fi
+}
+\makeatother
+
+% UNTUK NATBIB (yang Anda gunakan) - Menghitung pustaka otomatis
+\newwrite\tempfile
+\def\bibcounter{0}
+
+% Hook untuk menghitung referensi otomatis
+\let\oldbibitem\bibitem
+\renewcommand{\bibitem}[2][\empty]{%
+    \stepcounter{pustaka}%
+    \ifx#1\empty
+        \oldbibitem{#2}%
+    \else
+        \oldbibitem[#1]{#2}%
+    \fi
+}
+
+% Perintah untuk menambah counter lampiran (panggil di setiap lampiran)
+\newcommand{\addlampiran}{\stepcounter{lampiran}}

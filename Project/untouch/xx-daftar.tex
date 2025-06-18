@@ -1,0 +1,44 @@
+%% DILARANG EDIT BAGIAN INI
+% Daftar Isi
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+%\renewcommand{\cftdotsep}{\cftnodots}
+\setlength{\cftsecnumwidth}{0.95cm}     % Lebar nomor section (1.1, 1.2, dst)
+\setlength{\cftsubsecnumwidth}{1cm}     % Lebar nomor subsection (1.1.1, 1.1.2, dst)
+\setlength{\cftbeforetoctitleskip}{-0.5cm}
+\renewcommand{\cfttoctitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill\hfill}
+\renewcommand\contentsname{DAFTAR ISI}
+\singlespacing
+\tableofcontents
+
+% Daftar Singkatan
+% \input{a6-daftarsingkatan}
+
+% Daftar Tabel
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+\setlength{\cftbeforeloftitleskip}{-0.5cm}
+\renewcommand\cfttabpresnum{Tabel~}
+\cftsetindents{tab}{1.5em}{4em}
+\renewcommand{\cftloftitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cfttableader}{\dotfill}
+\renewcommand\listtablename{\centerline {\large\bfseries  DAFTAR TABEL}}
+\listoftables
+
+% Daftar Gambar
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+\setlength{\cftbeforeloftitleskip}{-0.5cm}
+\renewcommand\cftfigpresnum{Gambar~}
+\cftsetindents{fig}{1.5em}{5em}
+\renewcommand{\cftloftitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftfigleader}{\dotfill}
+\renewcommand\listfigurename{DAFTAR GAMBAR}
+\listoffigures
+%% DILARANG EDIT BAGIAN INI
