@@ -13,11 +13,19 @@ Mengacu pada praktik terbaik dokumentasi pengembangan perangkat lunak dan format
 
 ## 📅 2025
 
-### 🗓️ 19 Juni 2025 `#01`
+### 🗓️ 19 Juni 2025
+
+`#02`
+
+- Menambah peringatan penyuntingan pada file `xx-preambles.tex`
+
+`#01`
 
 - Menyesuaikan section Kerangka Pemikiran untuk dapat memuat gambar secara landscape atau potrait, serta opsi untuk membuatnya menjadi halaman tersendiri atau digabung dengan section sebelumnya.
 
-### 🗓️ 18 Juni 2025 `#01`
+### 🗓️ 18 Juni 2025
+
+`#01`
 
 - Pembuatan awal template berdasarkan Panduan Skripsi atau KTI FTID 2023.
 
