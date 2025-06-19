@@ -89,6 +89,115 @@ Template-LaTeX-Laporan-Tugas-Akhir
 
 ---
 
+## 🖥️ Panduan Alternatif (Windows - VS Code)
+
+Lihat petunjuk lengkap instalasi dan konfigurasi pada dokumentasi berikut:
+➡️ [Writing LaTeX Documents In Visual Studio Code With LaTeX Workshop](https://medium.com/@rcpassos/writing-latex-documents-in-visual-studio-code-with-latex-workshop-d9af6a6b2815)
+➡️ [A Fast Guide on Writing LaTeX with LaTeX Workshop in VS Code](https://mathjiajia.github.io/vscode-and-latex/)
+
+Pastikan untuk menyalin JSoN di bawah ini pada `settings.json`:
+
+```json
+"latex-workshop.latex.tools": [
+  {
+   "name": "latexmk",
+   "command": "latexmk",
+   "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "-pdf",
+    "-outdir=%OUTDIR%",
+    "%DOC%"
+   ],
+   "env": {
+
+   }
+  },
+  {
+   "name": "xelatex",
+   "command": "xelatex",
+   "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "%DOC%"
+   ],
+   "env": {
+
+   }
+  },
+  {
+   "name": "pdflatex",
+   "command": "pdflatex",
+   "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "%DOC%"
+   ],
+   "env": {
+
+   }
+  },
+  {
+   "name": "bibtex",
+   "command": "bibtex",
+   "args": [
+    "%DOCFILE%"
+   ],
+   "env": {
+
+   }
+  }
+ ],
+ "latex-workshop.latex.recipes": [
+  {
+   "name": "pdfLaTeX",
+   "tools": [
+    "pdflatex"
+   ]
+  },
+  {
+   "name": "latexmk 🔃",
+   "tools": [
+    "latexmk"
+   ]
+  },
+  {
+   "name": "xelatex",
+   "tools": [
+    "xelatex"
+   ]
+  },
+  {
+   "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+   "tools": [
+    "pdflatex",
+    "bibtex",
+    "pdflatex",
+    "pdflatex"
+   ]
+  },
+  {
+   "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+   "tools": [
+    "xelatex",
+    "bibtex",
+    "xelatex",
+    "xelatex"
+   ]
+  }
+ ],
+ "[latex]": {
+  "editor.defaultFormatter": "James-Yu.latex-workshop"
+ },
+```
+
+> File `settings.json` bisa dibuka melalui `>Open User Settings (JSON)` pada search bar di VScode
+
+---
+
 ## 🍎 Panduan Alternatif (MacOS - VS Code)
 
 Lihat petunjuk lengkap instalasi dan konfigurasi pada dokumentasi berikut:
