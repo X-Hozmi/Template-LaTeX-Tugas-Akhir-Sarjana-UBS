@@ -95,7 +95,7 @@ Lihat petunjuk lengkap instalasi dan konfigurasi pada dokumentasi berikut:
 ➡️ [Writing LaTeX Documents In Visual Studio Code With LaTeX Workshop](https://medium.com/@rcpassos/writing-latex-documents-in-visual-studio-code-with-latex-workshop-d9af6a6b2815)
 ➡️ [A Fast Guide on Writing LaTeX with LaTeX Workshop in VS Code](https://mathjiajia.github.io/vscode-and-latex/)
 
-Pastikan untuk menyalin JSoN di bawah ini pada `settings.json`:
+Pastikan untuk menambahkan JSoN di bawah ini pada `settings.json`:
 
 ```json
 "latex-workshop.latex.tools": [
