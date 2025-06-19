@@ -34,6 +34,9 @@
 \usepackage{amsmath}
 % Untuk halaman berorientasi landscape
 \usepackage{rotating}
+\usepackage{everypage}
+\usepackage{pdflscape}
+\usepackage{afterpage}
 % Pengaturan untuk list (daftar item dan angka)
 \usepackage{enumitem}
 % Paket untuk bibliografi menggunakan BibTeX
@@ -340,3 +343,10 @@
 
 % Perintah untuk menambah counter lampiran (panggil di setiap lampiran)
 \newcommand{\addlampiran}{\stepcounter{lampiran}}
+
+% Definisi untuk positioning absolut nomor halaman
+\def\PageTopMargin{1in}
+\def\PageLeftMargin{1in}
+\newcommand\atxy[3]{%
+ \AddThispageHook{\smash{\hspace*{\dimexpr-\PageLeftMargin-\hoffset+#1\relax}%
+  \raisebox{\dimexpr\PageTopMargin+\voffset-#2\relax}{#3}}}}
