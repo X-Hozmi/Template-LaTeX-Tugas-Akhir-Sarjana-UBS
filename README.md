@@ -82,10 +82,11 @@ Template-LaTeX-Laporan-Tugas-Akhir
 1. **Install MikTeX**: [https://miktex.org/download](https://miktex.org/download)
 
    > Pilih *For All Users*, centang opsi *Always install missing packages*
-2. **Install TeXstudio**: [https://www.texstudio.org/](https://www.texstudio.org/)
-3. **Update MikTeX** melalui MikTeX Console
-4. **Clone/unduh** repositori dan buka `laporan.tex` melalui TeXstudio
-5. Klik **Build & View** untuk melihat hasil kompilasi (`laporan.pdf`)
+2. **Install TeX Live** [https://www.tug.org/texlive/windows.html](https://www.tug.org/texlive/windows.html)
+3. **Install TeXstudio**: [https://www.texstudio.org/](https://www.texstudio.org/)
+4. **Update MikTeX** melalui MikTeX Console
+5. **Clone/unduh** repositori dan buka `laporan.tex` melalui TeXstudio
+6. Klik **Build & View** untuk melihat hasil kompilasi (`laporan.pdf`)
 
 ---
 
