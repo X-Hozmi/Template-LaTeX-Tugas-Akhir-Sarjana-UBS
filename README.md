@@ -24,6 +24,7 @@ Template-LaTeX-Laporan-Tugas-Akhir
 │   ├── a6-daftarsingkatan.tex        # Daftar Singkatan
 │   ├── a7-pustaka.bib                # Daftar pustaka dalam format BibTeX
 │   ├── a8-lampiran.tex               # Lampiran
+│   ├── a9-daftarriwayathidup.tex     # Daftar Riwayat Hidup
 │   ├── b1-bab1.tex                   # BAB I - Pendahuluan
 │   ├── b2-bab2.tex                   # BAB II - Tinjauan Pustaka
 │   ├── b3-bab3.tex                   # BAB III - Metode Penelitian
