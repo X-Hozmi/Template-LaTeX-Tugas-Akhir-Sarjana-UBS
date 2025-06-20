@@ -1,11 +1,66 @@
 %%========================================================================
-%% WAJIB DIISI SESUAI DATA YANG BENAR DAN TIDAK BOLEH ADA YANG TERLEWAT
+%% INFORMASI YANG WAJIB DIUBAH. PASTIKAN SEMUA COMMAND DIISI DENGAN DATA YANG BENAR
 %%========================================================================
 
 \providecommand{\judulid}{Judul Skripsi} %Judul Tugas Akhir Bahasa Indonesia
 \providecommand{\judulen}{Thesis Title} %Judul Tugas Akhir Bahasa Inggirs
 \providecommand{\penulis}{Abdillah Haidar Mahendro} %Nama Lengkap Mahasiswa 
-\providecommand{\nim}{43A87006220068} % NIM
+\providecommand{\nim}{43A87006220068}
+\providecommand{\tempattanggallahir}{Jakarta, 17 April 2001}
+\providecommand{\jeniskelamin}{Laki-laki}
+\providecommand{\alamat}{Jl. Bambu Kuning IX No. 108 RT 02/03 Sepanjang Jaya, Rawalumbu, Bekasi}
+\providecommand{\agama}{Islam}
+\providecommand{\statuspernikahan}{Belum Menikah}
+\providecommand{\nohandphone}{088977664271}
+\providecommand{\email}{abdil.haidar17@gmail.com}
+
+\providecommand{\datapribadi}{
+    % BUKAN BAGIAN YANG DIEDIT
+    \begin{tabular}{@{}p{4cm}rp{8cm}@{}}
+        Nama                        & : & {\penulis} \\
+        Tempat Tanggal Lahir        & : & {\tempattanggallahir} \\
+        Jenis Kelamin               & : & {\jeniskelamin} \\
+        Alamat                      & : & {\alamat} \\
+        Agama                       & : & {\agama} \\
+        Status Perkawinan           & : & {\statuspernikahan} \\
+        No. Handphone               & : & {\nohandphone} \\
+        Email                       & : & \textcolor{blue}{\underline{\href{mailto:abdil.haidar17@gmail.com}{abdil.haidar17@gmail.com}}} \\[0.5cm]
+    \end{tabular}
+    
+    % SILAKAN EDIT DATA PADA BAGIAN INI
+    \newcounter{pendidikan}
+    \setcounter{pendidikan}{0}
+    \begin{tabular}{@{}p{0.5cm}p{3cm}rp{8cm}@{}}
+        \multicolumn{4}{@{}l@{}}{\textbf{Riwayat Pendidikan}} \\[0.2cm]
+        
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & SDN Karang Tengah 6 Tangerang \\
+        & Tahun                                                & : & 2007 - 2009 \\
+        & Keterangan                                           & : & Pindah \\[0.3cm]
+        
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & SDN Pasir Muncang Caringin \\
+        & Tahun                                                & : & 2009 - 2011 \\
+        & Keterangan                                           & : & Pindah \\[0.3cm]
+        
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & SDN Karang Sari 1 Tangerang \\
+        & Tahun                                                & : & 2011 - 2012 \\
+        & Keterangan                                           & : & Pindah \\[0.3cm]
+    
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & SDN Sepanjang Jaya VIII Bekasi \\
+        & Tahun                                                & : & 2012 - 2013 \\
+        & Keterangan                                           & : & Lulus Berijazah \\[0.3cm]
+    
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & SMPN 2 Bekasi \\
+        & Tahun                                                & : & 2013 - 2016 \\
+        & Keterangan                                           & : & Lulus Berijazah \\[0.3cm]
+        
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & SMK Karya Bhakti 1 Bekasi \\
+        & Tahun                                                & : & 2016 - 2019 \\
+        & Keterangan                                           & : & Lulus Berijazah \\[0.3cm]
+        
+        \stepcounter{pendidikan}\arabic{pendidikan}. & Sekolah & : & Universitas Bani Saleh \\
+        & Tahun                                                & : & 2022 - Sekarang \\
+    \end{tabular}
+}
 
 \providecommand{\tipe}{Skripsi} %Tugas Akhir, Karya Ilmiah, Skripsi
 \providecommand{\type}{Undergraduate Thesis} %Undergraduate Thesis
@@ -17,38 +72,29 @@
 \providecommand{\universitas}{Universitas Bani Saleh} %
 
 \providecommand{\tglpersetujuan}{06 Juni 2025} %Tanggal di Lembar Persetujuan
-\providecommand{\tglpernyataan}{\today} %Tanggal di Surat Pernyataan
-\providecommand{\tglpengesahan}{\today} %Tanggal di Halaman Pengesahan
+\providecommand{\tglpengesahan}{\today} %Tanggal di Lembar Pengesahan
+\providecommand{\tglpernyataan}{\today} %Tanggal di Lembar Pernyataan
 \providecommand{\tahun}{\the\year{}} %Tahun Proyek Akhir
+\providecommand{\takunakademik}{2024/2025} %
+
+\providecommand{\rektor}{Dr. Ns. Desrinah Harahap, M.Kep., Sp.Kep.Mat} %Nama Rektor
+
+\providecommand{\dekan}{Rahmadi, S.Kom., M.Kom.} %Nama Dosen Dekan
+\providecommand{\kaprodi}{Zaenal Muttaqin Subekti S.Kom., M.Kom.} %Nama Dosen Kaprodi
+\providecommand{\NIPdekan}{1234567890} %NIP Dosen Dekan
+\providecommand{\NIPkaprodi}{1234567890} %NIP Dosen Kaprodi
 
 \providecommand{\pembimbingutama}{Abdillah Haidar Mahendro} %Nama Dosen Pembimbing Utama
 \providecommand{\pembimbingpendamping}{Abdillah Haidar Mahendro} %Nama Dosen Pembimbing Pendamping
 \providecommand{\NIPpembimbingutama}{43A87006220068} %NIP Dosen Pembimbing Utama
 \providecommand{\NIPpembimbingpendamping}{43A87006220068} %NIP Dosen Pembimbing Pendamping
 
-\providecommand{\kaprodi}{Abdillah Haidar Mahendro} %Nama Dosen Kaprodi
-\providecommand{\NIPkaprodi}{43A87006220068} %NIP Dosen Kaprodi
-
 \providecommand{\pengujisatu}{Abdillah Haidar Mahendro} %Nama Dosen Penguji 1
 \providecommand{\pengujidua}{Abdillah Haidar Mahendro} %Nama Dosen Penguji 2
 \providecommand{\pengujitiga}{Abdillah Haidar Mahendro} %Nama Dosen Penguji 3
-
 \providecommand{\NIDNpengujisatu}{43A87006220068} %NIDN Dosen Penguji 1
 \providecommand{\NIDNpengujidua}{43A87006220068} %NIDN Dosen Penguji 2
 \providecommand{\NIDNpengujitiga}{43A87006220068} %NIDN Dosen Penguji 3
-
-\providecommand{\sekretaris}{Abdillah Haidar Mahendro} %Nama Sekretaris Penguji
-\providecommand{\penguji}{Abdillah Haidar Mahendro} %Nama Penguji
-
-\providecommand{\tglpengesahanketua}{06 Juni 2025} %Tanggal di Lembar Pengesahan oleh Ketua Penguji
-\providecommand{\tglpengesahansekretaris}{\today} %Tanggal di Lembar Pengesahan oleh Ketua Penguji
-\providecommand{\tglpengesahanpenguji}{06 Juni 2025} %Tanggal di Lembar Pengesahan oleh Ketua Penguji
-
-\providecommand{\dekan}{Abdillah Haidar Mahendro} %Nama Dekan
-\providecommand{\NIPdekan}{197409282003121002} %NIP Dekan
-
-\providecommand{\koorprodi}{Abdillah Haidar Mahendro} %Nama Koorprodi
-\providecommand{\NIPkoorprodi}{196906151994031002} %NIP Koorprodi
 
 \providecommand{\kota}{Bekasi}
 
