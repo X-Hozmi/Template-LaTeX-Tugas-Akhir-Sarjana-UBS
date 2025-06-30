@@ -96,7 +96,8 @@
 
 % % Pengaturan format section dengan adjustwidth otomatis
 \titleformat{\section}{\fontsize{14}{16}\bfseries}{\thesection}{0.4cm}{}
-\titleformat{\subsection}{\fontsize{14}{16}\bfseries}{\thesubsection}{0.675cm}{}
+% \titleformat{\subsection}{\fontsize{14}{16}\bfseries}{\thesubsection}{0.675cm}{}
+\titleformat{\subsection}{\fontsize{14}{16}\bfseries}{\makebox[3.4em][l]{\thesubsection}}{0cm}{}
 
 % Mengatur jarak dan format spacing untuk chapter, section dan subsection
 \titlespacing*{\chapter}{0pt}{-1cm}{20pt}
@@ -353,5 +354,56 @@
 \newcommand\atxy[3]{%
  \AddThispageHook{\smash{\hspace*{\dimexpr-\PageLeftMargin-\hoffset+#1\relax}%
   \raisebox{\dimexpr\PageTopMargin+\voffset-#2\relax}{#3}}}}
+
+% Definisi warna untuk YAML
+\newcommand\YAMLcolonstyle{\color{magenta}\mdseries}
+\newcommand\YAMLkeystyle{\color{black}\ttfamily\footnotesize}
+\newcommand\YAMLvaluestyle{\color{codepurple}\ttfamily\footnotesize}
+
+\makeatletter
+
+% Nama bahasa YAML
+\newcommand\yamlLanguageName{yaml}
+
+\expandafter\expandafter\expandafter\lstdefinelanguage
+\expandafter{\yamlLanguageName}
+{
+  keywords={true,false,null,y,n,on,off,yes,no},
+  keywordstyle=\color{magenta}\ttfamily\footnotesize,      % Sama dengan keyword style mystyle
+  basicstyle=\YAMLkeystyle,                                % Menggunakan font yang konsisten
+  sensitive=false,
+  comment=[l]{\#},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{codegreen}\ttfamily\footnotesize,    % Sama dengan comment style mystyle
+  stringstyle=\YAMLvaluestyle,                             % Menggunakan warna string yang sama
+  moredelim=[l][\color{orange}]{\&},
+  moredelim=[l][\color{magenta}]{*},
+  moredelim=**[il][\YAMLcolonstyle{:}\YAMLvaluestyle]{:},  % switch to value style at :
+  morestring=[b]',
+  morestring=[b]",
+  columns=fullflexible,                                    % Sama dengan mystyle
+  breakatwhitespace=false,
+  breaklines=true,
+  keepspaces=true,
+  numbers=left,                                            % Sama dengan mystyle
+  numbersep=5pt,
+  numberstyle=\tiny\color{codegray},                       % Sama dengan mystyle
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+  lineskip=-1pt,                                           % Sama dengan mystyle
+  backgroundcolor=\color{backcolour},                      % Background yang sama
+  literate =    {---}{{\ProcessThreeDashes}}3
+                {>}{{\textcolor{red}\textgreater}}1     
+                {|}{{\textcolor{red}\textbar}}1 
+                {\ -\ }{{\mdseries\ -\ }}3,
+}
+
+% switch to key style at EOL
+\lst@AddToHook{EveryLine}{\ifx\lst@language\yamlLanguageName\YAMLkeystyle\fi}
+\makeatother
+
+\newcommand\ProcessThreeDashes{\llap{\color{cyan}\mdseries-{-}-}}
 
 %% MENGEDIT BAGIAN INI DAPAT MENGUBAH FORMAT DOKUMEN. HARAP DIHINDARI ATAU LAKUKAN DENGAN HATI-HATI

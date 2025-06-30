@@ -10,6 +10,9 @@
 \renewcommand{\cfttoctitlefont}{\hfill\large\bfseries}
 \renewcommand{\cftaftertoctitle}{\hfill\hfill}
 \renewcommand\contentsname{DAFTAR ISI}
+\renewcommand{\cftdot}{.}
+\renewcommand{\cftdot}{\normalfont.}
+\renewcommand{\cftdotsep}{1.5}
 \singlespacing
 \tableofcontents
 
@@ -20,13 +23,13 @@
 \clearpage
 \phantomsection
 \addcontentsline{toc}{chapter}{DAFTAR TABEL}
-\setlength{\cftbeforeloftitleskip}{-0.5cm}
+\setlength{\cftbeforelottitleskip}{-0.5cm}
 \renewcommand\cfttabpresnum{Tabel~}
 \cftsetindents{tab}{1.5em}{4.5em}
-\renewcommand{\cftloftitlefont}{\hfill\large\bfseries}
-\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
 \renewcommand{\cfttableader}{\dotfill}
-\renewcommand\listtablename{\centerline {\large\bfseries  DAFTAR TABEL}}
+\renewcommand\listtablename{\centerline {\large\bfseries DAFTAR TABEL}}
 \listoftables
 
 % Daftar Gambar
