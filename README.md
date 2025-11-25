@@ -11,53 +11,76 @@ Template ini dirancang untuk mempermudah penulisan Proposal dan Laporan Tugas Ak
 ## 📁 Struktur Proyek
 
 ```text
-Template-LaTeX-Laporan-Tugas-Akhir
-├── CHANGELOG                         # Catatan perubahan
-├── LICENSE                           # Lisensi proyek        
-├── Project                           # Folder proyek    
-│   ├── a0-identitas.tex              # Isi identitas laporan 
+Template-LaTeX-Tugas-Akhir-Sarjana-UBS
+├── CHANGELOG                         # Catatan perubahan versi
+├── LICENSE                           # Lisensi proyek (MIT License)
+├── Project                           # Folder proyek utama
+│   ├── a0-identitas.tex              # Identitas penulis dan laporan
 │   ├── a1-database.hyphenate.tex     # Database untuk hyphenation
-│   ├── a2-abstrak.tex                # Abstrak dalam Bahasa Indonesia  
-│   ├── a3-abstract.tex               # Abstrak dalam Bahasa Inggris
-│   ├── a4-persembahan.tex            # Persembahan
-│   ├── a5-katapengantar.tex          # Kata Pengantar
-│   ├── a6-daftarsingkatan.tex        # Daftar Singkatan
-│   ├── a7-pustaka.bib                # Daftar pustaka dalam format BibTeX
-│   ├── a8-lampiran.tex               # Lampiran
-│   ├── a9-daftarriwayathidup.tex     # Daftar Riwayat Hidup
-│   ├── b1-bab1.tex                   # BAB I - Pendahuluan
-│   ├── b2-bab2.tex                   # BAB II - Tinjauan Pustaka
-│   ├── b3-bab3.tex                   # BAB III - Metode Penelitian
-│   ├── b4-bab4.tex                   # BAB IV - Hasil dan Pembahasan
-│   ├── b5-bab5.tex                   # BAB V - Kesimpulan dan Saran
+│   ├── a6-daftarsingkatan.tex        # Daftar singkatan dan istilah
+│   ├── a7-pustaka.bib                # Daftar pustaka (BibTeX)
+│   ├── a8-lampiran.tex               # Lampiran dokumen
+│   ├── a9-daftarriwayathidup.tex     # Daftar riwayat hidup penulis
 │   ├── b6-bab6.tex                   # BAB VI - Tutorial LaTeX (opsional)
-│   ├── gambar                        # Folder untuk menyimpan gambar
+│   ├── gambar                        # Folder penyimpanan gambar
+│   │   ├── ci-ilustrasi.png
+│   │   ├── foto-penulis.png
 │   │   ├── gambar-kucing.jpg
-│   │   ├── logo-ubsal.png
+│   │   ├── logo-ubs.png
 │   │   ├── screenshot-miktex.png
 │   │   ├── screenshot-overleaf.png
-│   │   ├── screenshot-texstudio-macos.png
 │   │   └── screenshot-texstudio-windows.png
-│   ├── kode                          # Folder untuk menyimpan kode program
+│   ├── kode                          # Folder penyimpanan kode program
 │   │   ├── code_sample.cpp
 │   │   ├── code_sample.ino
 │   │   ├── code_sample.java
 │   │   └── code_sample.py
+│   ├── laporan                       # Folder khusus Laporan KKP/TA
+│   │   ├── konten-pelengkap          # Konten pelengkap laporan
+│   │   │   ├── a2-abstrak.tex        # Abstrak Bahasa Indonesia (tidak digunakan)
+│   │   │   ├── a3-abstract.tex       # Abstrak Bahasa Inggris (tidak digunakan)
+│   │   │   ├── a4-persembahan.tex    # Halaman persembahan
+│   │   │   └── a5-katapengantar.tex  # Kata pengantar
+│   │   ├── konten-utama              # Konten utama laporan (BAB I-V)
+│   │   │   ├── b1-bab1.tex           # BAB I - Pendahuluan
+│   │   │   ├── b2-bab2.tex           # BAB II - Tinjauan Organisasi
+│   │   │   ├── b3-bab3.tex           # BAB III - Metode Penelitian
+│   │   │   ├── b4-bab4.tex           # BAB IV - Penutup
+│   │   │   └── b5-bab5.tex           # Tidak digunakan
+│   │   └── untouch                   # File template (jangan diubah)
+│   │       ├── xx-daftar-hadir.tex
+│   │       ├── xx-daftar-penilaian-dosen-pembimbing.tex
+│   │       ├── xx-daftar-penilaian-pembimbing-lapangan.tex
+│   │       ├── xx-daftar.tex
+│   │       ├── xx-pengesahan-laporan.tex
+│   │       ├── xx-sampul-laporan.tex
+│   │       └── xx-sampuldalam-laporan.tex
 │   ├── laporan.pdf                   # Hasil kompilasi laporan
-│   ├── laporan.tex                   # File utama untuk kompilasi laporan
-│   └── untouch                       # Folder untuk menyimpan file yang tidak perlu diubah
-│       ├── xx-daftar.tex
+│   ├── laporan.tex                   # File utama kompilasi laporan
+│   ├── proposal                      # Folder khusus Proposal
+│   │   ├── konten-pelengkap          # Konten pelengkap proposal
+│   │   │   ├── a2-abstrak.tex        # Abstrak Bahasa Indonesia
+│   │   │   ├── a3-abstract.tex       # Abstrak Bahasa Inggris
+│   │   │   ├── a4-persembahan.tex    # Halaman persembahan
+│   │   │   └── a5-katapengantar.tex  # Kata pengantar
+│   │   ├── konten-utama              # Konten utama proposal (BAB I-V)
+│   │   │   ├── b1-bab1.tex           # BAB I - Pendahuluan
+│   │   │   ├── b2-bab2.tex           # BAB II - Tinjauan Pustaka
+│   │   │   ├── b3-bab3.tex           # BAB III - Metode Penelitian
+│   │   │   ├── b4-bab4.tex           # BAB IV - Hasil dan Pembahasan
+│   │   │   └── b5-bab5.tex           # BAB V - Kesimpulan dan Saran
+│   │   └── untouch                   # File template (jangan diubah)
+│   │       ├── xx-daftar.tex
+│   │       ├── xx-pengesahan-proposal.tex
+│   │       ├── xx-pernyataan.tex
+│   │       ├── xx-persetujuan-proposal.tex
+│   │       ├── xx-sampul-proposal.tex
+│   │       └── xx-sampuldalam-proposal.tex
+│   └── untouch                       # File konfigurasi umum (jangan diubah)
 │       ├── xx-daftarpustaka.tex
-│       ├── xx-pengesahan.tex
-│       ├── xx-pernyataan.tex
-│       ├── xx-persetujuan-proposal.tex
 │       ├── xx-persetujuan-ujian.tex
-│       ├── xx-preambles.tex
-│       ├── xx-sampul-laporan.tex
-│       ├── xx-sampul-proposal.tex
-│       ├── xx-sampuldalam-laporan.tex
-│       └── xx-sampuldalam-proposal.tex
-└── README.md                         # Dokumen ini
+│       └── xx-preambles.tex
+└── README.md                         # Dokumentasi proyek
 ```
 
 ---
