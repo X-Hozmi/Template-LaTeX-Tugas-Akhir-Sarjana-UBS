@@ -10,25 +10,25 @@
 \input{a1-database.hyphenate}
 
 \newcommand{\Jenis}{Proposal} %Pilih salah satu antara Proposal atau Laporan
-%\newcommand{\Jenis}{Laporan} %Pilih salah satu antara Proposal atau Laporan
+% \newcommand{\Jenis}{Laporan} %Pilih salah satu antara Proposal atau Laporan
 
 \begin{document}
 \ifthenelse{\equal{\Jenis}{Proposal}}{
-	\include{untouch/xx-sampul-proposal}
+	\include{proposal/untouch/xx-sampul-proposal}
 	\pagenumbering{roman}
-	% \include{untouch/xx-sampuldalam-proposal}
-	\include{untouch/xx-persetujuan-proposal}
-	\include{untouch/xx-pengesahan}
+	\include{proposal/untouch/xx-sampuldalam-proposal}
+	\include{proposal/untouch/xx-persetujuan-proposal}
+	\include{proposal/untouch/xx-pengesahan-proposal}
 
 	\begin{spacing}{1.5}
-		\include{untouch/xx-pernyataan}
+		\include{proposal/untouch/xx-pernyataan}
 	\end{spacing}
 
 	\begin{spacing}{1.2}
-		\include{a2-abstrak}
-		\include{a3-abstract}
-		\include{a5-katapengantar}
-		\include{untouch/xx-daftar}
+		\include{proposal/konten-pelengkap/a2-abstrak}
+		\include{proposal/konten-pelengkap/a3-abstract}
+		\include{proposal/konten-pelengkap/a5-katapengantar}
+		\include{proposal/untouch/xx-daftar}
 	\end{spacing}
 	
 	\savelastfrontpage
@@ -36,46 +36,44 @@
 	\pagenumbering{arabic}
 
 	\begin{spacing}{1.5}
-		\include{b1-bab1}
-		\include{b2-bab2}
-		\include{b3-bab3}
-		\include{b4-bab4}
-		\include{b5-bab5}
-		\include{b6-bab6} %HANYA TUTORIAL. HAPUS SAAT PENULISAN
+		\include{proposal/konten-utama/b1-bab1}
+		\include{proposal/konten-utama/b2-bab2}
+		\include{proposal/konten-utama/b3-bab3}
+		\include{proposal/konten-utama/b4-bab4}
+		\include{proposal/konten-utama/b5-bab5}
+		% \include{b6-bab6} %HANYA TUTORIAL. HAPUS SAAT PENULISAN
 	\end{spacing}
 }{
-
-	\include{untouch/xx-sampul-laporan}
+	\include{laporan/untouch/xx-sampul-laporan}
+	
 	\pagenumbering{roman}
-	\include{untouch/xx-sampuldalam-laporan}
 
 	\begin{spacing}{1.2}
-		\include{a2-abstrak}
-		\include{a3-abstract}
+		\include{laporan/konten-pelengkap/a4-persembahan}
+		\include{laporan/konten-pelengkap/a5-katapengantar}
 	\end{spacing}
 
-	\begin{spacing}{1.5}
-		\include{untouch/xx-pernyataan}
-	\end{spacing}
-
-	\include{untouch/xx-persetujuan-ujian}
-	\include{untouch/xx-pengesahan}
+	% \begin{spacing}{1.5}
+		\include{laporan/untouch/xx-pengesahan-laporan}
+		\include{laporan/untouch/xx-daftar-hadir}
+		\include{laporan/untouch/xx-daftar-penilaian-pembimbing-lapangan}
+		\include{laporan/untouch/xx-daftar-penilaian-dosen-pembimbing}
+	% \end{spacing}
 
 	\begin{spacing}{1.2}
-		\include{a4-persembahan}
-		\include{a5-katapengantar}
-		\include{untouch/xx-daftar}
+		\include{laporan/untouch/xx-daftar}
 	\end{spacing}
 
+	\savelastfrontpage
+	\clearpage
 	\pagenumbering{arabic}
 
 	\begin{spacing}{1.5}
-		\include{b1-bab1}
-		\include{b2-bab2}
-		\include{b3-bab3}
-		\include{b4-bab4}
-		\include{b5-bab5}
-		\include{b6-bab6} %HANYA TUTORIAL HAPUS SAAT PENULISAN
+		\include{laporan/konten-utama/b1-bab1}
+		\include{laporan/konten-utama/b2-bab2}
+		\include{laporan/konten-utama/b3-bab3}
+		\include{laporan/konten-utama/b4-bab4}
+		% \include{b6-bab6} %HANYA TUTORIAL HAPUS SAAT PENULISAN
 	\end{spacing}
 }
 \input{untouch/xx-daftarpustaka}
