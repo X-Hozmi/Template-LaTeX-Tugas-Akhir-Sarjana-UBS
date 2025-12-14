@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  25 NOV 2025 09:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  14 DEC 2025 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -970,22 +970,6 @@ File: gambar/logo-ubs.png Graphic file (type png)
 <use gambar/logo-ubs.png>
 Package pdftex.def Info: gambar/logo-ubs.png  used on input line 19.
 (pdftex.def)             Requested size: 159.333pt x 157.38687pt.
-LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 22.
- (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd
-File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 22.
- (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlptmcm.fd
-File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 22.
- (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxpsycm.fd
-File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
  [1
 
 
@@ -999,7 +983,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 ]
 \openout2 = `proposal/untouch/xx-persetujuan-proposal.aux'.
 
- (proposal/untouch/xx-persetujuan-proposal.tex) [2
+ (proposal/untouch/xx-persetujuan-proposal.tex
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 38.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 38.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 38.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+) [2
 
 
 
@@ -1159,7 +1160,7 @@ Package pdftex.def Info: gambar/logo-ubs.png  used on input line 47.
 (pdftex.def)             Requested size: 107.48329pt x 106.16931pt.
 )
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 260.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 286.
 See the caption package documentation for explanation.
 
 
@@ -1177,13 +1178,13 @@ Package rerunfilecheck Info: File `laporan.out' has not changed.
 Here is how much of TeX's memory you used:
  40517 strings out of 474486
  925563 string characters out of 5753571
- 1939542 words of memory out of 5000000
+ 1940542 words of memory out of 5000000
  61900 multiletter control sequences out of 15000+600000
  581520 words of font info for 73 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  93i,11n,95p,1186b,983s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (29 pages, 976721 bytes).
+Output written on laporan.pdf (29 pages, 976634 bytes).
 PDF statistics:
  429 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
