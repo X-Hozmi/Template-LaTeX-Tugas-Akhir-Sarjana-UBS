@@ -1,0 +1,140 @@
+%==================================================================
+% MULAI HALAMAN BARU TANPA BAB
+%==================================================================
+
+\clearpage               % Pindah ke halaman baru yang kosong
+% \thispagestyle{empty}  % Hapus tanda % jika ingin menghilangkan nomor halaman/header
+
+% Jika ingin judul di tengah (misal: TUGAS PENDAHULUAN), gunakan:
+% \begin{center} \Large \textbf{TUGAS / LATIHAN} \end{center} 
+% \vspace{1cm}
+
+% Mulai List Utama (Nomor 1, 2, 3...)
+\begin{enumerate}[leftmargin=*, label=\textbf{\arabic*.}]
+
+      % --- SOAL NOMOR 1 ---
+      \item \textbf{Jelaskan dan berikan contoh masing-masing:}
+            \begin{enumerate}[label=\textit{\alph*)}, leftmargin=0.5cm]
+                  \item \textit{White Box Testing} \\
+                        Definisi: White Box Testing adalah metode pengujian perangkat lunak di mana struktur internal, desain, dan implementasi item yang sedang diuji diketahui oleh penguji. Sering disebut sebagai Glass Box Testing\\
+                        Contoh: Seorang developer melihat kode fungsi hitungDiskon(). Ia melihat ada kondisi if (total \textgreater 100000). Maka, ia merancang tes dengan input 100001 untuk memastikan baris di dalam if tersebut dieksekusi\\
+
+                  \item \textit{Pengujian White Box Testing} \\
+                        Definisi: Ini merujuk pada teknik spesifik yang digunakan dalam White Box, seperti Statement Coverage, Branch Coverage, dan Path Coverage untuk menjamin seluruh logika kode teruji\\
+                        Contoh: Menggunakan teknik Basis Path untuk menentukan jumlah jalur independen dalam kode agar dapat memastikan setiap jalur eksekusi minimal dijalankan satu kali
+            \end{enumerate}
+            \vspace{0.5cm} % Jarak antar soal
+
+            % --- SOAL NOMOR 2 ---
+      \item \textbf{Jelaskan dan gambarkan Model Flowchart/Flowmap dari:}
+            \begin{enumerate}[label=\textit{\alph*)}, leftmargin=0.5cm]
+                  \item \textit{Basis Path} \\
+                        Penjelasan: Basis Path adalah teknik dalam White Box Testing yang diperkenalkan oleh Tom McCabe. Teknik ini memungkinkan penguji untuk mendapatkan ukuran kompleksitas logis dari desain prosedural dan menggunakan ukuran ini sebagai panduan untuk mendefinisikan himpunan jalur eksekusi dasar (basis set).\\
+                        Contoh: Jika ada kode dengan satu kondisi IF-ELSE, maka ada 2 jalur basis: (1) Jalur IF bernilai True, (2) Jalur IF bernilai False\\
+
+                        \clearpage
+                  \item \textit{Cyclomatic Complexity} \\
+                        Penjelasan: Cyclomatic Complexity adalah metrik perangkat lunak yang memberikan ukuran kuantitatif dari kompleksitas logis suatu program. Nilainya menentukan jumlah jalur independen dalam basis set suatu program. Rumus dasarnya adalah $V(G) = E - N + 2$ (dimana E = Edge/Panah, N = Node).\\
+                        Contoh: Dari diagram di bawah, jika E=4 dan N=4, maka $V(G) = 4 - 4 + 2 = 2$. Artinya ada 2 jalur independen yang harus diuji\\
+
+                        \begin{figure}[H]
+                              \centering
+                              \includegraphics[width=1\textwidth,height=0.50\textheight]{flowgraph-model.png}
+                        \end{figure}
+
+                        \clearpage
+                  \item \textit{Graph Matrix} \\
+                        Penjelasan: Graph Matrix adalah matriks persegi yang ukurannya sama dengan jumlah node pada flowgraph. Ini digunakan untuk membantu merepresentasikan graph secara otomatis dalam komputer dan membantu perhitungan Cyclomatic Complexity secara matematis\\
+
+                        \begin{table}[h]
+                              \centering
+                              \renewcommand{\arraystretch}{1.5} % Agar tabel tidak terlalu gepeng
+                              % Pastikan \usepackage{tabularx} ada di preamble
+                              \begin{tabularx}{0.8\textwidth}{|c| *{6}{>{\centering\arraybackslash}X|}}
+                                    \hline
+                                    \textbf{Node} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\ \hline
+                                    \textbf{1}    &            & 1          &            &            &            &            \\ \hline
+                                    \textbf{2}    &            &            & 1          &            & 1          &            \\ \hline
+                                    \textbf{3}    &            &            &            & 1          &            &            \\ \hline
+                                    \textbf{4}    &            &            &            &            &            & 1          \\ \hline
+                                    \textbf{5}    &            &            &            &            &            & 1          \\ \hline
+                                    \textbf{6}    &            &            &            &            &            &            \\ \hline
+                              \end{tabularx}
+                        \end{table}
+
+                        \noindent \textbf{Keterangan:}
+                        \begin{itemize}[leftmargin=0.5cm]
+                              \item Baris 1 ke Kolom 2 bernilai 1: Ada jalur dari Node 1 ke 2.
+                              \item Baris 2 ke Kolom 3 dan 5 bernilai 1: Menandakan percabangan (IF-ELSE) dari Node 2 ke Node 3 atau Node 5.
+                        \end{itemize}
+            \end{enumerate}
+            \vspace{0.5cm}
+
+            \clearpage
+
+            % --- SOAL NOMOR 3 (STUDI KASUS) ---
+      \item \textbf{Studi Kasus} \\
+            Sebuah aplikasi berbasis online (\textbf{contoh: bukalapak.com, dll atau sistem aplikasi tempat bekerja, apabila Saudara sudah bekerja}) untuk dijadikan sebuah rencana pemeliharaan jangka 5 (lima) tahun dengan mengedepankan konsep \textbf{Pemeliharaan Kualitas Perangkat Lunak (\textit{Software Maintenance})} menggunakan \textit{Metode Corrective, Adaptive, Perfective, Preventive}.
+
+            \vspace{0.5cm}
+
+            Modul-Modul yang Dikembangkan Sesuai Metode Corrective:
+
+            \begin{enumerate}[leftmargin=0.5cm, label=\textbf{\arabic*.}]
+                  \item Modul Keranjang Belanja (Checkout)\\
+                        Alasan Perbaikan: Laporan bug perhitungan total harga\\
+                        Implementasi: Pengguna melaporkan bahwa ketika diskon voucher digabungkan dengan diskon free shipping, total harga menjadi negatif atau tidak berkurang semestinya. Tim developer melakukan debugging pada logika kalkulasi harga di backend dan merilis patch perbaikan agar perhitungan akurat sesuai aturan bisnis.\\
+                  \item Modul Notifikasi (Push Notification)\\
+                        Alasan Perbaikan: Kegagalan pengiriman notifikasi real-time\\
+                        Implementasi: Ditemukan masalah pada service worker di Android versi tertentu yang menyebabkan notifikasi "Pesanan Tiba" terlambat masuk atau tidak muncul sama sekali. Dilakukan perbaikan kode pada handler notifikasi untuk memastikan pesan sampai ke pengguna tepat waktu (reaktif).
+            \end{enumerate}
+
+            \vspace{0.5cm}
+
+            Modul-Modul yang Dikembangkan Sesuai Metode Adaptif:
+
+            \begin{enumerate}[leftmargin=0.5cm, label=\textbf{\arabic*.}]
+                  \item Modul Aplikasi Inti (iOS dan Android)\\
+                        Alasan Adaptasi: Pembaruan OS\\
+                        Implementasi: Setiap tahun, Apple merilis iOS baru dan Google merilis Android baru. Modul aplikasi Shopee harus segera diadaptasi untuk memastikan kompatibilitas penuh, memanfaatkan fitur hardware baru (contoh: sensor, chip keamanan), dan mematuhi pedoman antarmuka (UI/UX) terbaru dari OS tersebut\\
+                  \item Modul Pembayaran (Payment Gateway dan ShopeePay)\\
+                        Alasan Adaptasi: Perubahan API pihak ketiga dan protokol keamanan\\
+                        Implementasi: Mitra perbankan, e-wallet, dan penyedia kartu kredit (pihak ketiga) secara rutin memperbarui API dan standar keamanan mereka (contoh: standar PCI-DSS). Modul ini harus terus disesuaikan agar proses checkout dan top-up tetap lancar, aman, dan tidak gagal\\
+                  \item Modul Logistik dan Pemenuhan (Fulfillment)\\
+                        Alasan Adaptasi: Perubahan API mitra logistik\\
+                        Implementasi: Shopee terintegrasi dengan puluhan mitra ekspedisi (J\&T, JNE, SiCepat, dll.). Jika salah satu mitra mengubah sistem (API) mereka untuk pelacakan resi, perhitungan ongkos kirim, atau kode booking, modul logistik Shopee harus segera beradaptasi agar data pengiriman tetap akurat\\
+                  \item Modul Kepatuhan Regulasi dan Pajak\\
+                        Alasan Adaptasi: Perubahan regulasi dan hukum pemerintah\\
+                        Implementasi: Ketika pemerintah (di Indonesia, Singapura, dll.) mengeluarkan aturan baru terkait Perlindungan Data Pribadi (UU PDP), perpajakan e-commerce, atau aturan impor, modul yang menangani data pengguna, laporan keuangan penjual, dan transaksi lintas batas harus segera dimodifikasi agar Shopee tetap patuh hukum\\
+                  \item Modul Cross-Browser (Aplikasi Web)\\
+                        Alasan Adaptasi: Pembaruan engine browser\\
+                        Implementasi: Versi baru Chrome, Safari, dan Firefox dirilis terus-menerus. Modul frontend (web) Shopee harus diuji dan disesuaikan untuk memastikan semua fungsi (seperti upload produk atau chat) berjalan tanpa masalah kompatibilitas di semua peramban terbaru
+            \end{enumerate}
+
+            \vspace{0.5cm}
+
+            Modul-Modul yang Dikembangkan Sesuai Metode Perfective:
+
+            \begin{enumerate}[leftmargin=0.5cm, label=\textbf{\arabic*.}]
+                  \item Modul Pencarian Produk (Search Engine)\\
+                        Alasan Penyempurnaan: Peningkatan kecepatan dan relevansi hasil\\
+                        Implementasi: Meskipun pencarian berjalan normal, waktu load dirasa masih bisa lebih cepat. Tim melakukan optimasi algoritma indexing dan menerapkan Elasticsearch versi terbaru untuk mengurangi waktu respon pencarian dari 2 detik menjadi 0.5 detik, serta meningkatkan akurasi rekomendasi produk terkait.\\
+                  \item Modul Antarmuka Pengguna (UI/UX Redesign)\\
+                        Alasan Penyempurnaan: Penambahan fitur Dark Mode dan kemudahan navigasi\\
+                        Implementasi: Mengubah tata letak menu agar lebih ergonomis bagi pengguna yang memegang HP dengan satu tangan, serta menambahkan opsi Dark Mode untuk menghemat baterai perangkat pengguna dan kenyamanan mata saat berbelanja di malam hari.
+            \end{enumerate}
+
+            \vspace{0.5cm}
+
+            Modul-Modul yang Dikembangkan Sesuai Metode Preventive:
+
+            \begin{enumerate}[leftmargin=0.5cm, label=\textbf{\arabic*.}]
+                  \item Refactoring Kode Backend (Microservices)\\
+                        Alasan Pencegahan: Mencegah technical debt dan kesulitan pengembangan di masa depan\\
+                        Implementasi: Kode lama (legacy code) yang ditulis secara monolithic mulai dipecah menjadi microservices yang lebih kecil dan terdokumentasi dengan baik. Tujuannya bukan untuk menambah fitur baru sekarang, tapi agar saat ada event besar (seperti Harbolnas 12.12), sistem lebih mudah di-scale up dan lebih mudah dipelihara oleh engineer baru.\\
+                  \item Pembaruan Keamanan Database (Security Hardening)\\
+                        Alasan Pencegahan: Mengantisipasi potensi serangan siber (Data Breach)\\
+                        Implementasi: Meskipun belum ada serangan, tim keamanan melakukan enkripsi ulang pada data sensitif pengguna menggunakan algoritma terbaru (misal: migrasi dari MD5 ke Bcrypt/Argon2) dan menutup celah vulnerability yang baru ditemukan oleh komunitas keamanan global sebelum celah tersebut dieksploitasi oleh peretas.
+            \end{enumerate}
+
+\end{enumerate}
