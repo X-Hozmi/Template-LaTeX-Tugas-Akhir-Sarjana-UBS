@@ -44,4 +44,15 @@
 \renewcommand{\cftfigleader}{\dotfill}
 \renewcommand\listfigurename{DAFTAR GAMBAR}
 \listoffigures
+
+% Script di bawah ini akan menghilangkan spasi ekstra antara entri
+% pada daftar gambar atau tabel yang berbeda bab
+% Bagian ini silakan di-comment apabila spasi ekstra diperlukan
+\begingroup
+\makeatletter
+\let\addvspace\@gobble
+\makeatother
+\listoffigures
+\endgroup
+
 %% DILARANG EDIT BAGIAN INI

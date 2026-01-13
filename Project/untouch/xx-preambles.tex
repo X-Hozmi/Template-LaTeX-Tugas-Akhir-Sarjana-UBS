@@ -69,6 +69,8 @@
 \usepackage{refcount}
 % Untuk simbol checkmark (\checkmark)
 \usepackage{amssymb}
+% Paket untuk kustomisasi header/footer
+\usepackage{fancyhdr}
 
 \graphicspath{{gambar/}} % Menentukan folder default untuk gambar
 
@@ -433,5 +435,25 @@ literate =    {---}{{\ProcessThreeDashes}}3
 \makeatother
 
 \newcommand\ProcessThreeDashes{\llap{\color{cyan}\mdseries-{-}-}}
+
+\newenvironment{topbottomnumbering}{%
+    \clearpage
+    \pagestyle{fancy}           % Aktifkan mode fancy
+    \fancyhf{}                  % Bersihkan header/footer lama
+    \fancyhead[R]{\thepage}     % Set nomor halaman di Kanan Atas
+    \renewcommand{\headrulewidth}{0pt} % Hapus garis header
+
+    % Redefinisikan style 'plain' (yang otomatis dipanggil oleh command \chapter)
+    % agar halaman awal Bab tetap memiliki nomor di Bawah Tengah
+    \fancypagestyle{plain}{%
+        \fancyhf{}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+    }
+}{%
+    % --- Perintah yang dijalankan saat \end{topbottomnumbering} ---
+    \clearpage
+    \pagestyle{plain} % Kembalikan ke style normal (Bawah Tengah) untuk Daftar Pustaka dll.
+}
 
 %% MENGEDIT BAGIAN INI DAPAT MENGUBAH FORMAT DOKUMEN. HARAP DIHINDARI ATAU LAKUKAN DENGAN HATI-HATI

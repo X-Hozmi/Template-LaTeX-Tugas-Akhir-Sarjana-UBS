@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  17 DEC 2025 10:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  13 JAN 2026 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,10 +847,27 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-\mylen=\skip123
+)) (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip123
+\f@nch@offset@elh=\skip124
+\f@nch@offset@erh=\skip125
+\f@nch@offset@olh=\skip126
+\f@nch@offset@orh=\skip127
+\f@nch@offset@elf=\skip128
+\f@nch@offset@erf=\skip129
+\f@nch@offset@olf=\skip130
+\f@nch@offset@orf=\skip131
+\f@nch@height=\skip132
+\f@nch@footalignment=\skip133
+\f@nch@widthL=\skip134
+\f@nch@widthC=\skip135
+\f@nch@widthR=\skip136
+\@temptokenb=\toks57
+)
+\mylen=\skip137
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
  (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
@@ -904,12 +921,12 @@ LaTeX Font Info:    ... okay on input line 15.
 \scratchbox=\box82
 \nofMPsegments=\count366
 \nofMParguments=\count367
-\everyMPshowfont=\toks57
+\everyMPshowfont=\toks58
 \MPscratchCnt=\count368
 \MPscratchDim=\dimen332
 \MPnumerator=\count369
 \makeMPintoPDFobject=\count370
-\everyMPtoPDFconversion=\toks58
+\everyMPtoPDFconversion=\toks59
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1080,6 +1097,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lof=\write8
 \openout8 = `laporan.lof'.
 
+ (laporan.lof)
+\tf@lof=\write9
+\openout9 = `laporan.lof'.
+
 ) [12
 
 ]
@@ -1176,7 +1197,7 @@ Package pdftex.def Info: gambar/logo-ubs.png  used on input line 47.
 (pdftex.def)             Requested size: 107.48329pt x 106.16931pt.
 )
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 288.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 290.
 See the caption package documentation for explanation.
 
 
@@ -1192,15 +1213,15 @@ Package rerunfilecheck Info: File `laporan.out' has not changed.
 (rerunfilecheck)             Checksum: 4D906385721573EF466ACD99D92DA023;6881.
  ) 
 Here is how much of TeX's memory you used:
- 41043 strings out of 474486
- 931564 string characters out of 5753571
+ 41373 strings out of 474486
+ 937491 string characters out of 5753571
  1940542 words of memory out of 5000000
- 62409 multiletter control sequences out of 15000+600000
+ 62733 multiletter control sequences out of 15000+600000
  582755 words of font info for 79 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 93i,11n,95p,1186b,983s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,95p,1186b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (29 pages, 976633 bytes).
+Output written on laporan.pdf (29 pages, 976650 bytes).
 PDF statistics:
  429 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
