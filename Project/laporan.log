@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  13 JAN 2026 09:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  5 MAR 2026 08:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,10 +864,31 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip135
 \f@nch@widthR=\skip136
 \@temptokenb=\toks57
+) (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen330
+\ESO@tempdimb=\dimen331
+)
+\AM@pagewidth=\dimen332
+\AM@pageheight=\dimen333
+\AM@fboxrule=\dimen334
+ (C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count358
+\AM@pagebox=\box81
+\AM@global@opts=\toks58
+\AM@pagecnt=\count359
+\AM@toc@title=\toks59
+\AM@lof@heading=\toks60
+\c@AM@survey=\count360
+\AM@templatesizebox=\box82
 )
 \mylen=\skip137
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
  (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
@@ -876,19 +897,19 @@ File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen330
+\arrowsize=\dimen335
 ))
-\c@table@totc=\count358
-\c@figure@totc=\count359
-\c@lampiran=\count360
-\c@lampiran@totc=\count361
-\c@pustaka=\count362
-\c@pustaka@totc=\count363
+\c@table@totc=\count361
+\c@figure@totc=\count362
+\c@lampiran=\count363
+\c@lampiran@totc=\count364
+\c@pustaka=\count365
+\c@pustaka@totc=\count366
 \tempfile=\write4
 ) (a1-database.hyphenate.tex) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count364
-\l__pdf_internal_box=\box81
+\l__color_backend_stack_int=\count367
+\l__pdf_internal_box=\box83
 ) (laporan.aux (proposal/untouch/xx-sampul-proposal.aux) (proposal/untouch/xx-sampuldalam-proposal.aux) (proposal/untouch/xx-persetujuan-proposal.aux) (proposal/untouch/xx-pengesahan-proposal.aux) (proposal/untouch/xx-pernyataan.aux) (proposal/konten-pelengkap/a2-abstrak.aux) (proposal/konten-pelengkap/a3-abstract.aux) (proposal/konten-pelengkap/a5-katapengantar.aux) (proposal/untouch/xx-daftar.aux) (proposal/konten-utama/b1-bab1.aux) (proposal/konten-utama/b2-bab2.aux) (proposal/konten-utama/b3-bab3.aux) (proposal/konten-utama/b4-bab4.aux) (proposal/konten-utama/b5-bab5.aux) (a9-daftarriwayathidup.aux))
 \openout1 = `laporan.aux'.
 
@@ -916,17 +937,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count365
-\scratchdimen=\dimen331
-\scratchbox=\box82
-\nofMPsegments=\count366
-\nofMParguments=\count367
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count368
-\MPscratchDim=\dimen332
-\MPnumerator=\count369
-\makeMPintoPDFobject=\count370
-\everyMPtoPDFconversion=\toks59
+\scratchcounter=\count368
+\scratchdimen=\dimen336
+\scratchbox=\box84
+\nofMPsegments=\count369
+\nofMParguments=\count370
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen337
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
+\everyMPtoPDFconversion=\toks62
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -984,7 +1005,7 @@ Package hyperref Info: Link coloring OFF on input line 15.
 \@outlinefile=\write5
 \openout5 = `laporan.out'.
 
-\c@lstlisting=\count371
+\c@lstlisting=\count374
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -994,9 +1015,32 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 <gambar/logo-ubs.png, id=175, 268.713pt x 265.428pt>
 File: gambar/logo-ubs.png Graphic file (type png)
 <use gambar/logo-ubs.png>
-Package pdftex.def Info: gambar/logo-ubs.png  used on input line 19.
+Package pdftex.def Info: gambar/logo-ubs.png  used on input line 25.
 (pdftex.def)             Requested size: 159.333pt x 157.38687pt.
- [1
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 28.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 28.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 28.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 
 {C:/Users/abdil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./gambar/logo-ubs.png>])
@@ -1009,31 +1053,7 @@ Package pdftex.def Info: gambar/logo-ubs.png  used on input line 19.
 ]
 \openout2 = `proposal/untouch/xx-persetujuan-proposal.aux'.
 
- (proposal/untouch/xx-persetujuan-proposal.tex
-LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 38.
- (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd
-File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 38.
- (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlptmcm.fd
-File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 38.
- (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxpsycm.fd
-File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [2
+ (proposal/untouch/xx-persetujuan-proposal.tex) [2
 
 
 
@@ -1096,10 +1116,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] (laporan.lof)
 \tf@lof=\write8
 \openout8 = `laporan.lof'.
-
- (laporan.lof)
-\tf@lof=\write9
-\openout9 = `laporan.lof'.
 
 ) [12
 
@@ -1178,7 +1194,7 @@ File: gambar/foto-penulis.png Graphic file (type png)
 <use gambar/foto-penulis.png>
 Package pdftex.def Info: gambar/foto-penulis.png  used on input line 10.
 (pdftex.def)             Requested size: 85.35847pt x 113.81184pt.
-\c@pendidikan=\count372
+\c@pendidikan=\count375
 ) [14
 
 
@@ -1197,7 +1213,7 @@ Package pdftex.def Info: gambar/logo-ubs.png  used on input line 47.
 (pdftex.def)             Requested size: 107.48329pt x 106.16931pt.
 )
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 290.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 293.
 See the caption package documentation for explanation.
 
 
@@ -1210,18 +1226,18 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: 4D906385721573EF466ACD99D92DA023;6881.
+(rerunfilecheck)             Checksum: 7675B7510E5DB13718D6AD645A1A1DC0;6722.
  ) 
 Here is how much of TeX's memory you used:
- 41373 strings out of 474486
- 937491 string characters out of 5753571
+ 42036 strings out of 474486
+ 948621 string characters out of 5753571
  1940542 words of memory out of 5000000
- 62733 multiletter control sequences out of 15000+600000
+ 63386 multiletter control sequences out of 15000+600000
  582755 words of font info for 79 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  93i,11n,95p,1186b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (29 pages, 976650 bytes).
+Output written on laporan.pdf (29 pages, 976634 bytes).
 PDF statistics:
  429 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
