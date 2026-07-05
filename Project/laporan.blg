@@ -3,41 +3,19 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: laporan.aux
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: newapa.bst
-Reallocating 'name_of_file' (item size: 1) to 40 items.
-A level-1 auxiliary file: proposal/untouch/xx-sampul-proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 45 items.
-A level-1 auxiliary file: proposal/untouch/xx-sampuldalam-proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 45 items.
-A level-1 auxiliary file: proposal/untouch/xx-persetujuan-proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 44 items.
-A level-1 auxiliary file: proposal/untouch/xx-pengesahan-proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 35 items.
-A level-1 auxiliary file: proposal/untouch/xx-pernyataan.aux
-Reallocating 'name_of_file' (item size: 1) to 41 items.
-A level-1 auxiliary file: proposal/konten-pelengkap/a2-abstrak.aux
 Reallocating 'name_of_file' (item size: 1) to 42 items.
-A level-1 auxiliary file: proposal/konten-pelengkap/a3-abstract.aux
-Reallocating 'name_of_file' (item size: 1) to 47 items.
-A level-1 auxiliary file: proposal/konten-pelengkap/a5-katapengantar.aux
-Reallocating 'name_of_file' (item size: 1) to 31 items.
-A level-1 auxiliary file: proposal/untouch/xx-daftar.aux
-Reallocating 'name_of_file' (item size: 1) to 34 items.
-A level-1 auxiliary file: proposal/konten-utama/b1-bab1.aux
-Reallocating 'name_of_file' (item size: 1) to 34 items.
-A level-1 auxiliary file: proposal/konten-utama/b2-bab2.aux
-Reallocating 'name_of_file' (item size: 1) to 34 items.
-A level-1 auxiliary file: proposal/konten-utama/b3-bab3.aux
-Reallocating 'name_of_file' (item size: 1) to 34 items.
-A level-1 auxiliary file: proposal/konten-utama/b4-bab4.aux
-Reallocating 'name_of_file' (item size: 1) to 34 items.
-A level-1 auxiliary file: proposal/konten-utama/b5-bab5.aux
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-Reallocating 'name_of_file' (item size: 1) to 26 items.
-A level-1 auxiliary file: a9-daftarriwayathidup.aux
-Database file #1: a7-pustaka.bib
+A level-1 auxiliary file: jurnal/konten-pelengkap/jurnal-header.aux
+Reallocating 'name_of_file' (item size: 1) to 43 items.
+A level-1 auxiliary file: jurnal/konten-pelengkap/jurnal-abstrak.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: jurnal/konten-utama/jurnal-main.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+Reallocating 'name_of_file' (item size: 1) to 52 items.
+A level-1 auxiliary file: jurnal/konten-pelengkap/jurnal-aturan-penulisan.aux
+Database file #1: a7-pustaka-digunakan.bib
 You've used 10 entries,
             2708 wiz_defined-function locations,
-            675 strings with 7520 characters,
+            664 strings with 7148 characters,
 and the built_in function-call counts, 5414 in all, are:
 = -- 471
 > -- 289

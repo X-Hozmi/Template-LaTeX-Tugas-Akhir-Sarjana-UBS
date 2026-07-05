@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  5 MAR 2026 08:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.4)  5 JUL 2026 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,7 +888,7 @@ File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
 \mylen=\skip137
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 101.
  (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
@@ -905,52 +905,64 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@lampiran@totc=\count364
 \c@pustaka=\count365
 \c@pustaka@totc=\count366
+\c@totfigures=\count367
+\c@tottables=\count368
+\c@totallampiran=\count369
+\c@totallampiran@totc=\count370
 \tempfile=\write4
-) (a1-database.hyphenate.tex) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)) (a1-database.hyphenate.tex) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count367
+\l__color_backend_stack_int=\count371
 \l__pdf_internal_box=\box83
-) (laporan.aux (proposal/untouch/xx-sampul-proposal.aux) (proposal/untouch/xx-sampuldalam-proposal.aux) (proposal/untouch/xx-persetujuan-proposal.aux) (proposal/untouch/xx-pengesahan-proposal.aux) (proposal/untouch/xx-pernyataan.aux) (proposal/konten-pelengkap/a2-abstrak.aux) (proposal/konten-pelengkap/a3-abstract.aux) (proposal/konten-pelengkap/a5-katapengantar.aux) (proposal/untouch/xx-daftar.aux) (proposal/konten-utama/b1-bab1.aux) (proposal/konten-utama/b2-bab2.aux) (proposal/konten-utama/b3-bab3.aux) (proposal/konten-utama/b4-bab4.aux) (proposal/konten-utama/b5-bab5.aux) (a9-daftarriwayathidup.aux))
+) (laporan.aux)
 \openout1 = `laporan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 15.
-LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line 16.
  (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
+\scratchcounter=\count372
 \scratchdimen=\dimen336
 \scratchbox=\box84
-\nofMPsegments=\count369
-\nofMParguments=\count370
+\nofMPsegments=\count373
+\nofMParguments=\count374
 \everyMPshowfont=\toks61
-\MPscratchCnt=\count371
+\MPscratchCnt=\count375
 \MPscratchDim=\dimen337
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks62
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -1000,246 +1012,158 @@ Package newfloat Info: `rotating' package detected.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 16.
 (laporan.out) (laporan.out)
 \@outlinefile=\write5
 \openout5 = `laporan.out'.
 
-\c@lstlisting=\count374
+\c@lstlisting=\count378
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\openout2 = `proposal/untouch/xx-sampul-proposal.aux'.
+(jurnal/konten-pelengkap/jurnal-header.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(102.43008pt, 657.2585pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=657.2585pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-53.8399pt
+* \headheight=70.0pt
+* \headsep=14.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(proposal/untouch/xx-sampul-proposal.tex
-<gambar/logo-ubs.png, id=175, 268.713pt x 265.428pt>
-File: gambar/logo-ubs.png Graphic file (type png)
-<use gambar/logo-ubs.png>
-Package pdftex.def Info: gambar/logo-ubs.png  used on input line 25.
-(pdftex.def)             Requested size: 159.333pt x 157.38687pt.
-LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 28.
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 51.
  (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 28.
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 51.
  (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 28.
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 51.
  (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-
-{C:/Users/abdil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./gambar/logo-ubs.png>])
-\openout2 = `proposal/untouch/xx-sampuldalam-proposal.aux'.
-
- (proposal/untouch/xx-sampuldalam-proposal.tex) [1
-
-
-
-]
-\openout2 = `proposal/untouch/xx-persetujuan-proposal.aux'.
-
- (proposal/untouch/xx-persetujuan-proposal.tex) [2
-
-
-
-]
-\openout2 = `proposal/untouch/xx-pengesahan-proposal.aux'.
-
- (proposal/untouch/xx-pengesahan-proposal.tex) [3
-
-
-
-]
-\openout2 = `proposal/untouch/xx-pernyataan.aux'.
-
- (proposal/untouch/xx-pernyataan.tex) [4
-
-
-
-]
-\openout2 = `proposal/konten-pelengkap/a2-abstrak.aux'.
-
- (proposal/konten-pelengkap/a2-abstrak.tex) [5
-
-
-
-
-]
-\openout2 = `proposal/konten-pelengkap/a3-abstract.aux'.
-
- (proposal/konten-pelengkap/a3-abstract.tex) [6
-
-
-
-
-]
-\openout2 = `proposal/konten-pelengkap/a5-katapengantar.aux'.
-
- (proposal/konten-pelengkap/a5-katapengantar.tex [7
-
-
-
-
-]) [8]
-\openout2 = `proposal/untouch/xx-daftar.aux'.
-
- (proposal/untouch/xx-daftar.tex (laporan.toc [9
-
-
-
-
-])
-\tf@toc=\write6
-\openout6 = `laporan.toc'.
-
- [10] (laporan.lot)
-\tf@lot=\write7
-\openout7 = `laporan.lot'.
-
- [11
-
-] (laporan.lof)
-\tf@lof=\write8
-\openout8 = `laporan.lof'.
-
-) [12
-
-]
-\openout2 = `proposal/konten-utama/b1-bab1.aux'.
-
- (proposal/konten-utama/b1-bab1.tex
-Bab 1.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 \end{subsectioncontent}
-                             [1
-
-
-
-
-
-] [2]) [3]
-\openout2 = `proposal/konten-utama/b2-bab2.aux'.
-
- (proposal/konten-utama/b2-bab2.tex
-Bab 2.
-[4
-
-
-
-
-] [5]
-File: gambar/logo-ubs.png Graphic file (type png)
-<use gambar/logo-ubs.png>
-Package pdftex.def Info: gambar/logo-ubs.png  used on input line 31.
-(pdftex.def)             Requested size: 318.69818pt x 322.96304pt.
-) [6]
-\openout2 = `proposal/konten-utama/b3-bab3.aux'.
-
- (proposal/konten-utama/b3-bab3.tex
-Bab 3.
-[7
-
-
-
-
-]) [8]
-\openout2 = `proposal/konten-utama/b4-bab4.aux'.
-
- (proposal/konten-utama/b4-bab4.tex
-Bab 4.
-) [9
-
-
-
-
-]
-\openout2 = `proposal/konten-utama/b5-bab5.aux'.
-
- (proposal/konten-utama/b5-bab5.tex
-Bab 5.
-[10
-
-
-
-
-] [11]) [12] (untouch/xx-daftarpustaka.tex (laporan.bbl)) [13
-
-
-
-
-]
-\openout2 = `a9-daftarriwayathidup.aux'.
-
- (a9-daftarriwayathidup.tex
-<gambar/foto-penulis.png, id=371, 268.713pt x 265.428pt>
-File: gambar/foto-penulis.png Graphic file (type png)
-<use gambar/foto-penulis.png>
-Package pdftex.def Info: gambar/foto-penulis.png  used on input line 10.
-(pdftex.def)             Requested size: 85.35847pt x 113.81184pt.
-\c@pendidikan=\count375
-) [14
-
-
- <./gambar/foto-penulis.png>] (a8-lampiran.tex [15
-
-
-
-]
-File: gambar/logo-ubs.png Graphic file (type png)
-<use gambar/logo-ubs.png>
-Package pdftex.def Info: gambar/logo-ubs.png  used on input line 38.
-(pdftex.def)             Requested size: 107.48329pt x 106.16931pt.
-File: gambar/logo-ubs.png Graphic file (type png)
-<use gambar/logo-ubs.png>
-Package pdftex.def Info: gambar/logo-ubs.png  used on input line 47.
-(pdftex.def)             Requested size: 107.48329pt x 106.16931pt.
+)) (jurnal/konten-pelengkap/jurnal-abstrak.tex) (jurnal/konten-utama/jurnal-main.tex (jurnal/konten-utama/c1-pendahuluan.tex) (jurnal/konten-utama/c2-tinjauan-pustaka.tex) (jurnal/konten-utama/c3-metode-penelitian.tex) (jurnal/konten-utama/c4-hasil-dan-pembahasan.tex
+<gambar/logo-ubs-jurnal.jpg, id=106, 467.7475pt x 206.7725pt>
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 1.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [1{C:/Users/abdil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}
+
+
+ <./gambar/logo-ubs-jurnal.jpg>]) (jurnal/konten-utama/c5-penutup.tex) (laporan.bbl
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 58.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+ [2])) (jurnal/konten-pelengkap/jurnal-aturan-penulisan.tex
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 4.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+ [3]
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 57.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+ [4]
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 101.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+ [5]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 116.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 116.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 119.
+ (C:\Users\abdil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 179.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+ [6])
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 293.
+Package caption Warning: Unused \captionsetup[figure] on input line 222.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 227.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 297.
 See the caption package documentation for explanation.
 
 
 AED: lastpage setting LastPage
-[16
-
-] (laporan.aux (proposal/untouch/xx-sampul-proposal.aux) (proposal/untouch/xx-sampuldalam-proposal.aux) (proposal/untouch/xx-persetujuan-proposal.aux) (proposal/untouch/xx-pengesahan-proposal.aux) (proposal/untouch/xx-pernyataan.aux) (proposal/konten-pelengkap/a2-abstrak.aux) (proposal/konten-pelengkap/a3-abstract.aux) (proposal/konten-pelengkap/a5-katapengantar.aux) (proposal/untouch/xx-daftar.aux) (proposal/konten-utama/b1-bab1.aux) (proposal/konten-utama/b2-bab2.aux) (proposal/konten-utama/b3-bab3.aux) (proposal/konten-utama/b4-bab4.aux) (proposal/konten-utama/b5-bab5.aux) (a9-daftarriwayathidup.aux))
+File: gambar/logo-ubs-jurnal.jpg Graphic file (type jpg)
+<use gambar/logo-ubs-jurnal.jpg>
+Package pdftex.def Info: gambar/logo-ubs-jurnal.jpg  used on input line 110.
+(pdftex.def)             Requested size: 128.7273pt x 56.9055pt.
+[7] (laporan.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: 7675B7510E5DB13718D6AD645A1A1DC0;6722.
+(rerunfilecheck)             Checksum: 20025EC73F0D20DF47FFB33F1371DD25;2812.
  ) 
 Here is how much of TeX's memory you used:
- 42036 strings out of 474486
- 948621 string characters out of 5753571
+ 41994 strings out of 474486
+ 935117 string characters out of 5753571
  1940542 words of memory out of 5000000
- 63386 multiletter control sequences out of 15000+600000
- 582755 words of font info for 79 fonts, out of 8000000 for 9000
+ 63471 multiletter control sequences out of 15000+600000
+ 631026 words of font info for 137 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 93i,11n,95p,1186b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,19n,95p,817b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (29 pages, 976634 bytes).
+Output written on laporan.pdf (7 pages, 115027 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,49 +1,59 @@
 %==================================================================
-% Ini adalah lampiran
+% Ini adalah lampiran (Sesuaikan dengan Panduan Universitas Bani Saleh)
 %==================================================================
 
-%% DILARANG EDIT BAGIAN INI
+\clearpage
 \appendix
-\chapter*{LAMPIRAN A \\ KODE PROGRAM}
-\addcontentsline{toc}{chapter}{LAMPIRAN A KODE PROGRAM}
-%% DILARANG EDIT BAGIAN INI
-
-%isi lampiran kode program disini
-%% edit bagian ini
+% Mendaftarkan tulisan "LAMPIRAN" ke dalam Daftar Isi Utama
 \phantomsection
-\section*{Lampiran A.1. Program Pembacaan Sensor Ultrasonic}
-\addcontentsline{toc}{section}{\protect\numberline{}Lampiran A.1. Program Pembacaan Sensor Ultrasonic}
-%\lstinputlisting[language=Python]{kode/code_sample.py}
+\addcontentsline{toc}{chapter}{LAMPIRAN}
 
-\hfill
+%==================================================================
+% REDEFINISI FORMAT LAMPIRAN SESUAI PANDUAN KAMPUS
+%==================================================================
+\makeatletter
+% Menggunakan 2 Parameter.
+% Parameter #1 (Opsional/Dalam kurung siku): Untuk teks di Daftar Isi (Tanpa \\)
+% Parameter #2 (Wajib/Dalam kurung kurawal): Untuk teks di Halaman Lampiran (Menggunakan \\ untuk piramida terbalik)
+\renewcommand{\judulLampiran}[2][]{%
+    \clearpage
+    \refstepcounter{section}% Naikkan angka urutan lampiran (1, 2, 3...)
 
-\section*{Lampiran A.2. Program Keseluruhan Proyek Akhir}
-\addcontentsline{toc}{section}{\protect\numberline{}Lampiran A.2. Program Keseluruhan Proyek Akhir}
-%\lstinputlisting[language=Python]{kode/code_sample.py}
-%% edit bagian ini
+    % --- KODE KRUSIAL UNTUK MENGHITUNG TOTAL LAMPIRAN DI ABSTRAK ---
+    \stepcounter{totallampiran}%
+    % ----------------------------------------------------------------
 
-%% DILARANG EDIT BAGIAN INI
-\chapter*{LAMPIRAN B \\ GAMBAR-GAMBAR}
-\addcontentsline{toc}{chapter}{LAMPIRAN B GAMBAR-GAMBAR}
-%% DILARANG EDIT BAGIAN INI
+    \phantomsection
+    % Jika parameter opsional #1 diisi, gunakan itu untuk Daftar Isi. Jika kosong, gunakan #2.
+    % \ifthenelse{\equal{#1}{}}{
+    %     \addcontentsline{toc}{section}{\protect\numberline{}Lampiran \arabic{section}. #2}%
+    % }{
+    %     \addcontentsline{toc}{section}{\protect\numberline{}Lampiran \arabic{section}. #1}%
+    % }
 
-%isi lampiran gambar-gambar disini
-%lampiran ini dapat diedit sesuai kebutuhan, tidak harus lampiran A berisi kode program dan B gambar-gambar
-%% edit bagian ini
-\phantomsection
-\section*{Lampiran B.1. Foto Aktivitas Kegiatan Proyek Akhir}
-\addcontentsline{toc}{section}{\protect\numberline{}Lampiran B.1. Foto Aktivitas Kegiatan Proyek Akhir}
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.4]{logo-ubs}
-\end{figure}
+    % Mencetak teks di halaman dokumen (Rata Tengah, Kapital, 1 Spasi)
+    \begin{center}
+        \textbf{\large LAMPIRAN \arabic{section}} \\[1\baselineskip]
+        \textbf{\large \MakeUppercase{#2}}
+    \end{center}
+    \vspace{1.5em}
+}
+\makeatother
 
-\hfill
+% Mereset nomor menjadi 1, 2, 3
+\setcounter{section}{0}
+\renewcommand{\thesection}{\arabic{section}}
 
-\section*{Lampiran B.2. Foto Produk Proyek Akhir}
-\addcontentsline{toc}{section}{\protect\numberline{}Lampiran B.2. Foto Produk Proyek Akhir}
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.4]{logo-ubs}
-\end{figure}
-%% edit bagian ini
+%==================================================================
+% ISI LAMPIRAN DIMULAI DARI SINI
+%==================================================================
+
+% --- LAMPIRAN 1 ---
+\judulLampiran[PROGRAM PEMBACAAN SENSOR ULTRASONIC]{PROGRAM PEMBACAAN SENSOR ULTRASONIC}
+
+\lstinputlisting[language=Python]{kode/code_sample.py}
+
+% --- LAMPIRAN 2 ---
+\judulLampiran[PROGRAM KESELURUHAN PROYEK AKHIR]{PROGRAM KESELURUHAN PROYEK AKHIR}
+
+\lstinputlisting[language=Python]{kode/code_sample.py}

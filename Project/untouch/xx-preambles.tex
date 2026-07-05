@@ -24,7 +24,7 @@
 % Pengaturan format dan penomoran judul bab
 \usepackage{titlesec}
 % Pengaturan untuk caption gambar dan tabel
-\usepackage[font=small, format=plain, up, textfont=up, tablename=TABEL]{caption}
+\usepackage[font=small, format=plain, up, textfont=up, tablename=Tabel]{caption}
 % \usepackage{caption}
 \usepackage{subcaption}
 % Pengaturan tabel, multirow, dan ukuran kolom otomatis
@@ -80,8 +80,11 @@
 \setlength\parindent{1cm} % Mengatur jarak indentasi paragraf menjadi 1cm (1 tab)
 
 % Mengatur format penomoran section dan subsection
-\renewcommand{\thesection}{\thechapter.\arabic{section}}        % Subsection: 1, 2, 3, ...
-\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}  % Subsection: 1.1, 2.1, 3.1, ...
+% \renewcommand{\thesection}{\thechapter.\arabic{section}}        % Subsection: 1, 2, 3, ...
+% \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}  % Subsection: 1.1, 2.1, 3.1, ...
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 
 % Pengaturan daftar isi, daftar gambar, dan daftar tabel
 \cftsetpnumwidth{1.5em}
@@ -96,6 +99,7 @@
 \renewcommand\cftchapaftersnum{}
 \newlength\mylen
 \settowidth\mylen{\bfseries BAB 1 :\ } % Menyesuaikan lebar penomoran bab
+% \settowidth\mylen{\bfseries BAB VIII :\ } % Menyesuaikan lebar penomoran bab
 \cftsetindents{chap}{0pt}{\mylen}
 
 % % Pengaturan format dan penomoran judul bab
@@ -338,6 +342,44 @@
 \newcounter{pustaka}
 \regtotcounter{pustaka}
 
+\newcounter{totfigures}
+\newcounter{tottables}
+
+\providecommand\totfig{}
+\providecommand\tottab{}
+
+\makeatletter
+\AtEndDocument{%
+	\addtocounter{totfigures}{\value{figure}}%
+	\addtocounter{tottables}{\value{table}}%
+	\immediate\write\@mainaux{%
+		\string\gdef\string\totfig{\number\value{totfigures}}%
+		\string\gdef\string\tottab{\number\value{tottables}}%
+	}%
+}
+\makeatother
+
+\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}\setcounter{figure}{0}}{}{}
+\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}\setcounter{table}{0}}{}{}
+
+% --- KONFIGURASI LAMPIRAN OTOMATIS ---
+
+% 1. Mendaftarkan counter untuk total lampiran
+\newcounter{totallampiran}
+\regtotcounter{totallampiran}
+
+% 2. Membuat command baru untuk Judul Lampiran Otomatis
+% Penggunaan: \judulLampiran{Judul Lampiran}
+\newcommand{\judulLampiran}[1]{%
+	\refstepcounter{section}% Naikkan nomor section (misal A.1 ke A.2)
+	\stepcounter{totallampiran}% Naikkan counter total lampiran untuk Abstrak
+	\phantomsection % Agar hyperlink di PDF mengarah ke tempat yang benar
+	% Menampilkan Judul di Halaman (Format: Lampiran A.1. Judul)
+	\section*{Lampiran \thesection.\ #1}%
+	% Menambahkan ke Daftar Isi (Format: Lampiran A.1. Judul)
+	\addcontentsline{toc}{section}{\protect\numberline{}Lampiran \thesection.\ #1}%
+}
+
 % Command untuk mendapatkan halaman roman terakhir
 \makeatletter
 \newcommand{\savelastfrontpage}{%
@@ -476,5 +518,14 @@ literate =    {---}{{\ProcessThreeDashes}}3
 		\end{adjustwidth}
 	\end{spacing}
 }
+
+%==================================================================
+% HELPER COMMANDS UNTUK JURNAL
+%==================================================================
+\usepackage[T1]{fontenc}
+\newcommand{\SecHead}[1]{\vspace{10pt}\noindent\textbf{#1}\par\nopagebreak\vspace{2pt}}
+\newcommand{\SubHead}[1]{\noindent\textbf{#1}\par\nopagebreak}
+\newcommand{\PlaceholderPar}{Text artikel ditulis disini, text artikel ditulis disini, text artikel ditulis disini, text artikel ditulis disini, text artikel ditulis disini, text artikel ditulis disini.\par}
+\newcommand{\PlaceholderParShort}{Text artikel ditulis disini, text artikel ditulis disini, text artikel ditulis disini.\par}
 
 %% MENGEDIT BAGIAN INI DAPAT MENGUBAH FORMAT DOKUMEN. HARAP DIHINDARI ATAU LAKUKAN DENGAN HATI-HATI

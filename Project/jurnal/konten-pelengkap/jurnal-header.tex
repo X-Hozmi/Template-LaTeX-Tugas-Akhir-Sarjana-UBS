@@ -1,0 +1,62 @@
+% ============================================================
+%  JURNAL TRIDI - Teknologi Informatika & Komputer
+%  Universitas Bani Saleh, Fakultas Teknologi Informasi & Digital
+% ============================================================
+
+% Konfigurasi layout spesifik Jurnal (meng-override setup sebelumnya)
+\newgeometry{left=3cm,right=3cm,top=3.6cm,bottom=3cm,headheight=70pt,headsep=14pt}
+\setlength{\parindent}{1.25cm}
+\singlespacing
+\sloppy
+\hypersetup{hidelinks} % Menghilangkan kotak merah link untuk tampilan Jurnal
+
+% ---------- Format Heading Jurnal (Otomatis & Bersih) ----------
+% Menghapus penomoran section & subsection (1, 1.1, dst)
+\setcounter{secnumdepth}{0}
+
+% Mengubah \section menjadi Kapital, Bold, 12pt dengan margin yang sesuai
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% Mengubah \subsection menjadi Title Case, Bold, 12pt
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+
+% ---------- Header / footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.75pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyhead[L]{\raisebox{-0.15cm}{\includegraphics[height=2cm]{logo-ubs-jurnal.jpg}}}
+\fancyhead[R]{%
+    \footnotesize % 10pt
+    \begin{tabular}[b]{@{}r@{}}
+        \textbf{JURNAL TRIDI}                                                                                        \\
+        Teknologi Informatika \& Komputer                                                                            \\
+        Vol.~\colorbox{yellow!70}{\voljurnal} No.~\colorbox{yellow!70}{\nojurnal} \colorbox{yellow!70}{\bulanjurnal} \\
+        \colorbox{yellow!70}{\tahunpublikasi} \universitas\ FTID                                                     \\
+        P-ISSN: \pissn\ , E-ISSN: \eissn
+    \end{tabular}%
+}
+
+% ---------- Blok Judul & Penulis ----------
+\begin{center}
+    {\large\bfseries \MakeUppercase{\judulid}\par}
+    \vspace{2pt}
+    {\large (Maksimal 12 Kata, Times New Roman 14, spasi 1, Bold)\par}
+
+    \vspace{12pt}
+
+    {\small\bfseries \penulis\textsuperscript{1}, \penulisdua\textsuperscript{2}, dan seterusnya (max 5 penulis)\par}
+    {\small\bfseries (Times New Roman 11, spasi 1, Bold)\par}
+
+    \vspace{8pt}
+
+    {\small
+        \textsuperscript{1}\universitas, \email\\
+        \textsuperscript{2}\institusidua, \emaildua\par}
+
+    \vspace{4pt}
+    {\small\bfseries Gunakan email resmi UBS nama@ubs.ac.id. Atau email lain untuk penulis eksternal\par}
+\end{center}

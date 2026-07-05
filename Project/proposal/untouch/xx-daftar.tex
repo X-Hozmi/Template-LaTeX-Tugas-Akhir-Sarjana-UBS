@@ -13,6 +13,10 @@
 \renewcommand{\cftdot}{.}
 \renewcommand{\cftdot}{\normalfont.}
 \renewcommand{\cftdotsep}{1.5}
+
+\setlength{\cftbeforesecskip}{4pt}    % Jarak antar Section (1.1, 1.2, dst)
+\setlength{\cftbeforesubsecskip}{2pt} % Jarak antar Subsection (1.1.1, 1.1.2, dst)
+
 \singlespacing
 \tableofcontents
 
@@ -30,7 +34,16 @@
 \renewcommand{\cftafterlottitle}{\hfill}
 \renewcommand{\cfttableader}{\dotfill}
 \renewcommand\listtablename{\centerline {\large\bfseries DAFTAR TABEL}}
+
+\setlength{\cftbeforetabskip}{6pt}
+
+\begingroup
+\makeatletter
+\let\addvspace\@gobble
+\makeatother
 \listoftables
+
+\endgroup
 
 % Daftar Gambar
 \clearpage
@@ -43,16 +56,14 @@
 \renewcommand{\cftafterloftitle}{\hfill}
 \renewcommand{\cftfigleader}{\dotfill}
 \renewcommand\listfigurename{DAFTAR GAMBAR}
+
+\setlength{\cftbeforefigskip}{6pt}
+
+\begingroup
+\makeatletter
+\let\addvspace\@gobble
+\makeatother
 \listoffigures
 
-% Script di bawah ini akan menghilangkan spasi ekstra antara entri
-% pada daftar gambar atau tabel yang berbeda bab
-% Bagian ini silakan di-comment apabila spasi ekstra diperlukan
-% \begingroup
-% \makeatletter
-% \let\addvspace\@gobble
-% \makeatother
-% \listoffigures
-% \endgroup
-
+\endgroup
 %% DILARANG EDIT BAGIAN INI

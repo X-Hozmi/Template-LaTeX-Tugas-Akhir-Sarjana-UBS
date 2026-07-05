@@ -1,0 +1,23 @@
+\normalsize % Mengembalikan font ke 12pt untuk isi artikel
+
+\input{jurnal/konten-utama/c1-pendahuluan}
+\input{jurnal/konten-utama/c2-tinjauan-pustaka}
+\input{jurnal/konten-utama/c3-metode-penelitian}
+\input{jurnal/konten-utama/c4-hasil-dan-pembahasan}
+\input{jurnal/konten-utama/c5-penutup}
+
+% =======================================================
+% OTOMATISASI DAFTAR PUSTAKA MENGGUNAKAN APA STYLE
+% =======================================================
+\section{REFERENSI}
+% 1. Menghapus teks bawaan daftar pustaka (karena kita sudah buat \section{REFERENSI})
+\renewcommand{\bibsection}{}
+% 2. Mengubah ukuran font khusus daftar pustaka menjadi 11pt sesuai aturan
+\small
+% 3. Mengatur hanging indent sebesar 1.25cm (menjorok ke dalam)
+\setlength{\bibhang}{1.25cm}
+% 4. Mengatur jarak antar entri daftar pustaka (8pt)
+\setlength{\bibsep}{8pt}
+
+\nocite{*} % Memanggil semua entri yang ada di file .bib
+\bibliography{a7-pustaka-digunakan}
